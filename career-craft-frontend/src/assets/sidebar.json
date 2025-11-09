@@ -1,0 +1,42 @@
+[
+{
+  "title": "Domains",
+  "icon": "bi-person-fill",
+  "childrens": [
+    {
+      "title": "Web Development",
+      "icon": "bi-person-fill",
+      "childrens": [
+        { "title": "Frontend", "path": "/profile" },
+        { "title": "Backend", "path": "/profile" },
+        { "title": "Database", "path": "/profile" },
+        { "title": "DevOps", "path": "/profile" }
+      ]
+    },
+    {
+      "title": "Machine Learning",
+      "icon": "bi-person-fill",
+      "childrens": [
+        {
+          "title": "Supervised Machine Learning",
+          "path": "/profile",
+          "childrens": [
+            { "title": "Classification", "icon": "bi-person-fill" },
+            { "title": "Regression", "icon": "bi-person-fill" }
+          ]
+        },
+        { "title": "Unsupervised Machine Learning", "path": "/profile" },
+        { "title": "Reinforcement Learning", "path": "/profile" }
+      ]
+    },
+    {
+      "title": "DSA",
+      "childrens": [
+        { "title": "Programming Language", "path": "/settings/account" },
+        { "title": "Data Structures" },
+        { "title": "Practice", "path": "/settings/notifications" }
+      ]
+    }
+  ]
+}
+]
