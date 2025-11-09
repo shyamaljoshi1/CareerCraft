@@ -55,6 +55,7 @@ function SidebarItems({ props }) {
         <div className="sidebar-title" onClick={() => setOpen(!open)}>
           <span>
             {props.icon && <i className={props.icon}></i>}
+            &nbsp;
             {props.title}
           </span>
           <i className={`bi ${open ? "bi-chevron-up" : "bi-chevron-down"}`}></i>

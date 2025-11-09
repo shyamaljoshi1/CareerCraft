@@ -118,6 +118,7 @@ width:1.7em;
 .sidebar {
   width: 260px;
   background-color: #efe8e8;
+  /* background-color: #fff; */
   height: 100%;
   overflow-y: auto;
   padding: 1em 0;

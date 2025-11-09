@@ -28,9 +28,9 @@ import logo from "../../assets/logo.png";
 function Sidebar() {
   return (
     <div className="sidebar">
-      <div className="sidebar-header">
+      {/* <div className="sidebar-header">
         <img src={logo} alt="App logo" className="sidebar-logo" />
-      </div>
+      </div> */}
 
       {items.map((item, index) => (
         <SidebarItems key={index} props={item} />
