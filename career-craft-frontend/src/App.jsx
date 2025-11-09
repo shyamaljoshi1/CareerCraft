@@ -1,4 +1,4 @@
-import { useState } from 'react'
+/*import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 
 
@@ -20,9 +20,9 @@ function App() {
     <Dashboard/>
     </div>
    
-    {/* routes -> hompage -> route */}
-    {/* routes -> hompage -> route */}
-
+    
+    
+/*
     <div className="container">
       <h1  className="title">Carrer Craft</h1>
       <p className="info">Carrer Craft is a website theta help people in carrer development .It created by students of iitj.
@@ -38,3 +38,39 @@ function App() {
 }
 
 export default App
+
+*/
+
+
+import { useState } from 'react';
+import { Routes, Route } from "react-router-dom";
+import Navbar from './Components/Navbar.jsx';
+import Sidebar from './Components/sidebar/Sidebar.jsx';
+import Dashboard from './Components/Dashboard.jsx';
+import Domain from './Components/Domain.jsx'
+import './App.css';
+
+function App() {
+  const [theme, setTheme] = useState('day');
+
+  return (
+    <div className={`app-container ${theme}`}>
+      {/* <Routes> */}
+      <Navbar theme={theme} setTheme={setTheme} />
+      
+   {/* <Route path="/" element={<Dashboard/>}/> */}
+        {/* <Route path="/domain" element={<Domain/>}/> */}
+      
+      {/* </Routes> */}
+
+      <div className="main-layout">
+        <Sidebar />
+        <div className="content-area">
+          <Dashboard />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
