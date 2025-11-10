@@ -44,32 +44,17 @@ export default App
 
 import { useState } from 'react';
 import { Routes, Route } from "react-router-dom";
-import Navbar from './Components/Navbar/Navbar.jsx';
-import Sidebar from './Components/Sidebar/Sidebar.jsx';
 import Dashboard from './pages/Dashboard/Dashboard.jsx';
-import Domain from './Components/Domain.jsx'
 import './App.css';
 
 function App() {
   const [theme, setTheme] = useState('day');
 
   return (
-    <div className={`app-container ${theme}`}>
-      {/* <Routes> */}
-      <Navbar theme={theme} setTheme={setTheme} />
-      
-      {/* <Route path="/" element={<Dashboard/>}/> */}
-        {/* <Route path="/domain" element={<Domain/>}/> */}
-      
-      {/* </Routes> */}
+    <Routes>
+      <Route path="/" element={<Dashboard/>} />
 
-      <div className="main-layout">
-        <Sidebar />
-        <div className="content-area">
-          <Dashboard />
-        </div>
-      </div>
-    </div>
+    </Routes>
   );
 }
 

@@ -1,3 +1,41 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  background-color: #ffffff;
+}
+
+/* Layout with sidebar and main content */
+.main-layout {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 70px);
+}
+
+/* Content Area */
+.content-area {
+  flex: 1;
+  padding: 2em;
+  background-color: #faf9f8;
+  overflow-y: auto;
+}
+
+/* Night mode */
+.app-container.night {
+  background-color: #121212;
+  color: white;
+}
+
+.app-container.night .sidebar {
+  background-color: #1f1f1f;
+}
+
+.app-container.night .content-area {
+  background-color: #181818;
+}
+
 .dashboard {
   text-align: center;
   background-color: #ffffff;

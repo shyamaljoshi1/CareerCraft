@@ -117,6 +117,15 @@ width:1.7em;
 */
 .sidebar {
   width: 260px;
+  flex-shrink: 0;
+  background-color: #efe8e8;
+  height: 100%;
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar {
+  width: 260px;
   background-color: #efe8e8;
   /* background-color: #fff; */
   height: 100%;
