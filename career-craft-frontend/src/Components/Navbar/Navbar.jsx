@@ -1,62 +1,46 @@
-/*import React from "react"
-import './Navbar.css'
-import logo from '../assets/logo.png'
-import day from '../assets/day.png'
-import night from '../assets/night.png'
-
-function Navbar (){
-    // const toggle_mode=()=>{
-        // theme=='day' ? setTheme('night'):setTheme('day')
-    // }
-    return (
-        <div className='navbar'>
-             <img src={logo} alt="" className='logo'/> 
-            <ul>
-                <a href="https://www.google.com/">Home</a>
-                <a href="#">Products</a>
-                <a href="#">Features</a>
-                <a href="#">About</a>
-            </ul>
-
-            
-        </div>
-    )
-}
-
-export default Navbar;
-
-
-*/
-
+import React from 'react';
 import './Navbar.css';
-import { Sun, Moon } from 'lucide-react';
+import { Sun, Moon } from 'lucide-react'; // Assuming you have a theme toggle
 import logo from '../../assets/logo.png';
-import Domain from '../Domain.jsx'
 
-import { Routes, Route } from "react-router-dom";
-function Navbar({ theme, setTheme }) {
+// 1. Import 'Link' from react-router-dom
+import { Link } from "react-router-dom"; 
+// We don't need 'Routes' or 'Route' in this file, so they are removed.
+
+function Navbar({ }) {
   return (
     <nav className="navbar">
       <div className="nav-left">
-        <img src={logo} alt="Career Craft" className="nav-logo" />
-        {/* <h2 className="nav-title">Career Craft</h2> */}
+        {/* 2. Make the logo link back to the homepage */}
+        <Link to="/">
+          <img src={logo} alt="Career Craft" className="nav-logo" />
+        </Link>
       </div>
 
       <div className="nav-center">
         <div className="nav-inner-center">
-          <a href="#">Home</a>
-          <a href="#">Domain
-          </a>
-          <a href="#">Experience</a>
-          <a href="#">Profile</a>
+          {/* 3. Change all <a> tags to <Link> tags */}
+          <Link to="/">Home</Link>
+          
+           
+          
+          {/* This is the new link you wanted */}
+          <Link to="/experience">Experience</Link>
+          
+          {/* We can set this up for your future profile page */}
+          <Link to="/profile">Profile</Link>
         </div>
-
       </div>
+      
+      {/* I'm assuming your theme toggle UI is here */}
+      {/* <div className="nav-right">
+        <div onClick={toggle_mode} className="toggle-icon">
+          <Sun />
+        </div>
+      </div>
+      */}
     </nav>
   );
 }
 
 export default Navbar;
-
-
-

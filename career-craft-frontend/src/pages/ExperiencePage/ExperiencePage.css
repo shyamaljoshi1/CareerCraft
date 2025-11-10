@@ -1,0 +1,24 @@
+.experience-page {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.experience-header {
+  background: linear-gradient(to right, #8e51ff, #6c3eb1);
+  color: #ffffff;
+  padding: 3em 2em;
+  text-align: center;
+}
+
+.experience-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5em 0;
+}
+
+.experience-header p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}

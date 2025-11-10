@@ -1,0 +1,37 @@
+import React from 'react';
+import Navbar from '../../Components/Navbar/Navbar'
+import DomainCard from '../../Components/DomainCard/DomainCard';
+import { getAllDomains } from '../../data/allDomains';
+import './HomePage.css';
+
+function HomePage() {
+  const domains = getAllDomains();
+
+  return (
+    <div className="homepage">
+      <Navbar /> {/* Your existing Navbar */}
+
+      {/* 1. Hero Section */}
+      <div className="hero-section">
+        <h1 className="hero-title">Your Compass in the World of Tech</h1>
+        <p className="hero-subtitle">
+          Confused about starting a career in IT. We provide clear roadmaps, 
+          curated resources, and expert insights for every domain, from
+          Cybersecurity to Data Science. Find all you need to excel in your interested domain here.
+        </p>
+      </div>
+
+      {/* 2. Domain Grid Section */}
+      <div className="domain-grid-container">
+        <h2 className="grid-title">Explore All Domains</h2>
+        <div className="domain-grid">
+          {domains.map((domain) => (
+            <DomainCard key={domain.id} domain={domain} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default HomePage;

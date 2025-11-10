@@ -1,0 +1,114 @@
+/* Shared styles for Overview and Topic Pages */
+
+.content-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #283544;
+  margin-bottom: 0.5em;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.5em;
+}
+
+.content-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 1.5em;
+}
+
+/* Domain Overview specific */
+.quiz-button {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #8e51ff; /* Your theme color */
+  color: #ffffff;
+  border-radius: 8px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.quiz-button:hover {
+  background-color: #7c45e0;
+  transform: translateY(-2px);
+}
+
+/* Topic Page specific */
+.resource-section {
+  margin-bottom: 2.5em;
+}
+
+.resource-section h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.5em;
+}
+
+.resource-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.resource-section li {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1em 1.5em;
+  margin-bottom: 1em;
+  transition: box-shadow 0.2s;
+}
+
+.resource-section li:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.resource-section li a {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #8e51ff;
+  text-decoration: none;
+}
+
+.resource-section li a:hover {
+  text-decoration: underline;
+}
+
+.resource-section li strong {
+  color: #334155;
+}
+
+.resource-type {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #e0e7ff;
+  color: #4338ca;
+  padding: 0.25em 0.5em;
+  border-radius: 4px;
+  margin-left: 0.75em;
+}
+
+/* ... (Keep all your existing styles) ... */
+
+
+/* --- Add these new styles at the end --- */
+
+.section-divider {
+  border: 0;
+  height: 1px;
+  background-color: #e2e8f0;
+  margin: 3em 0; /* More spacing */
+}
+
+.roadmap-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #283544;
+  margin-bottom: 1.5em;
+  text-align: left;
+}

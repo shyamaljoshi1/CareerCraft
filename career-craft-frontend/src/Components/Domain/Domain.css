@@ -1,0 +1,19 @@
+.domain-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.domain-main {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.domain-content {
+  flex-grow: 1;
+  padding: 2em 3em;
+  overflow-y: auto;
+  background-color: #ffffff;
+}

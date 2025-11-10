@@ -1,0 +1,45 @@
+.domain-sidebar {
+  width: 280px; /* Slightly wider for topic titles */
+  flex-shrink: 0;
+  background-color: #fdfdfd;
+  height: 100%;
+  overflow-y: auto;
+  border-right: 1px solid #eee;
+  padding: 1.5em 1em;
+}
+
+.domain-sidebar-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #283544;
+  padding: 0 0.5em 1em 0.5em;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.domain-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  gap: 4px;
+}
+
+.domain-sidebar-link {
+  display: block;
+  padding: 0.8em 1em;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #334155;
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.domain-sidebar-link:hover {
+  background-color: #f1f5f9;
+}
+
+/* This is the magic class from React Router for the active link */
+.domain-sidebar-link.active {
+  background-color: #8e51ff; /* Your theme color from Navbar.css */
+  color: #ffffff;
+  font-weight: 600;
+}

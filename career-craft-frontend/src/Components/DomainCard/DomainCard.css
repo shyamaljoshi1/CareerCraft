@@ -1,0 +1,87 @@
+.domain-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.domain-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(142, 81, 255, 0.15);
+}
+
+.card-image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  background-color: #f8f8ff; /* Light purple background */
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.card-icon { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #8e51ff; /* Your purple theme */
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+  
+
+
+.card-content {
+  padding: 1.5em;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #283544;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.card-image {
+  width:140px;
+  height: 120px; 
+  /* Fixed height for all cards */
+  display: block;
+  margin: 0 auto;
+  object-fit: cover; /* This makes the image cover the space, cropping if needed */
+  border-bottom: 1px solid #e2e8f0;
+}
+.card-description {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.6;
+  height: 4.5em; /* Fixed height for 3 lines of text */
+  overflow: hidden;
+}
+
+.card-button {
+  display: inline-block;
+  width: 100%;
+  padding: 0.8em 1em;
+  margin-top: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: #8e51ff;
+  color: #ffffff;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.card-button:hover {
+  background-color: #7c45e0; /* Darker purple */
+}
