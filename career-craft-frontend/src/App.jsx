@@ -1,5 +1,14 @@
-import { useState } from 'react';
 import { Routes, Route } from "react-router-dom";
+
+// Auth imports
+import Login from './pages/Auth/Login.jsx';
+import Signup from './pages/Auth/Signup.jsx';
+
+// Context imports
+import { useAuth } from './contexts/AuthContext';
+
+// Protection imports
+import ProtectedRoute from './Components/ProtectedRoute.jsx';
 
 // 1. Import your new HomePage
 import HomePage from './pages/HomePage/HomePage.jsx'; 
@@ -16,23 +25,40 @@ import TopicPage from './Components/Domain/TopicPage.jsx';
 import './App.css';
 
 function App() {
-  const [theme, setTheme] = useState('day');
+  const { isAuthenticated, loading } = useAuth();
 
   return (
     <Routes>
+      {/* Public Routes */}
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
+
       {/* 1. Set the new HomePage as the default "/" route */}
       <Route path="/" element={<HomePage />} />
 
-      {/* 2. Keep your old dashboard on a new path (optional) */}
-      <Route path="/dashboard" element={<Dashboard />} />
+      {/* Protected Routes */}
+      <Route 
+        path="/dashboard" 
+        element={<ProtectedRoute element={<Dashboard />} />} 
+      />
 
-      {/* 3. Keep your dynamic domain routes */}
-      <Route path="/domains/:domainId" element={<DomainPage />}>
+      <Route 
+        path="/domains/:domainId" 
+        element={<ProtectedRoute element={<DomainPage />} />}
+      >
         <Route index element={<DomainOverview />} />
         <Route path=":topicId" element={<TopicPage />} />
       </Route>
-      <Route path="/quiz/:domainId" element={<QuizPage />} />
-      <Route path="/experience" element={<ExperiencePage />} />
+
+      <Route 
+        path="/quiz/:domainId" 
+        element={<ProtectedRoute element={<QuizPage />} />} 
+      />
+
+      <Route 
+        path="/experience" 
+        element={<ProtectedRoute element={<ExperiencePage />} />} 
+      />
 
     </Routes>
   );
