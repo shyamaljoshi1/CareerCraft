@@ -1,0 +1,219 @@
+/* Using your Montserrat font */
+.profile-page-container {
+  background-color: #f9f9f9;
+  min-height: 90vh;
+  padding: 2em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.profile-page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #283544;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+/* Re-using your Auth.css .error-alert style */
+.profile-message {
+  max-width: 900px;
+  margin: 0 auto 1.5em auto;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.profile-message.success {
+  background-color: #f0fdf4;
+  color: #27ae60;
+  border-left: 4px solid #27ae60;
+}
+.profile-message.error {
+  background-color: #fadbd8;
+  color: #c0392b;
+  border-left: 4px solid #e74c3c;
+}
+
+/* Grid layout for the cards */
+.profile-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Re-using your Auth.css .auth-card style */
+.profile-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.profile-card-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #283544;
+  margin: 0;
+}
+
+.profile-card-body {
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+/* Read-only text style */
+.profile-data-text {
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 12px 16px; /* Same as .form-input */
+  border: 2px solid #eee;
+  border-radius: 8px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Re-using your .form-group and .form-input styles */
+.profile-card-body .form-group {
+  gap: 8px;
+}
+.profile-card-body .form-input {
+  /* Styles are inherited from Auth.css */
+  margin: 0;
+}
+
+/* Edit / Save / Cancel Buttons */
+.edit-button, .save-button, .cancel-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.6em 1em;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+}
+.edit-controls {
+  display: flex;
+  gap: 0.5em;
+}
+
+.edit-button {
+  background-color: #f0f5ff;
+  color: #8e51ff;
+  border: 2px solid #e6d9ff;
+}
+.edit-button:hover {
+  background-color: #e6d9ff;
+}
+
+.save-button {
+  background: #27ae60;
+  color: white;
+}
+.save-button:hover {
+  background: #219653;
+}
+
+.cancel-button {
+  background: #f1f1f1;
+  color: #555;
+}
+.cancel-button:hover {
+  background: #e0e0e0;
+}
+
+
+/* --- Quiz History Card Styles --- */
+.loading-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  gap: 1em;
+  color: #666;
+}
+.loading-history .spinner {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.quiz-history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.quiz-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1em;
+  transition: box-shadow 0.3s ease;
+}
+.quiz-card:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.quiz-card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75em;
+}
+
+.quiz-card-domain {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #283544;
+}
+.quiz-card-date {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.score-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5em;
+}
+.score-bar {
+  height: 8px;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.score-bar-fill {
+  height: 100%;
+  background: linear-gradient(to right, #8e51ff, #6c3eb1);
+  border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .profile-content-grid {
+    grid-template-columns: 1fr;
+  }
+}

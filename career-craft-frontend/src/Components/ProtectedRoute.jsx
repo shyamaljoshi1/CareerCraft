@@ -1,33 +1,24 @@
-import { Navigate } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthContext';
+import React from 'react';
+import { useAuth } from '../contexts/AuthContext'; // Path to your context
+import { Navigate, useLocation } from 'react-router-dom';
 
-/**
- * ProtectedRoute Component
- * Checks if user is authenticated before allowing access to protected routes
- * If not authenticated, redirects to login page
- */
-const ProtectedRoute = ({ element }) => {
-  const { isAuthenticated, loading } = useAuth();
+// This component accepts an 'element' prop, just like in your App.jsx
+function ProtectedRoute({ element }) {
+  const { isAuthenticated, loading } = useAuth(); // Using 'isAuthenticated' from your App.jsx
+  const location = useLocation();
 
   if (loading) {
-    return (
-      <div style={{ 
-        display: 'flex', 
-        justifyContent: 'center', 
-        alignItems: 'center', 
-        height: '100vh',
-        fontSize: '18px'
-      }}>
-        Loading...
-      </div>
-    );
+    // Show a loading message while your AuthContext is checking
+    return <div>Loading session...</div>;
   }
 
   if (!isAuthenticated) {
-    return <Navigate to="/login" replace />;
+    // If user is not logged in, redirect to login page
+    return <Navigate to="/login" state={{ from: location }} replace />;
   }
 
+  // If user is logged in, show the element (the page)
   return element;
-};
+}
 
 export default ProtectedRoute;
