@@ -6,6 +6,7 @@ require('dotenv').config();
 // Import routes
 const authRoutes = require('./routes/authRoutes');
 const userRoutes = require('./routes/userRoutes');
+const domainRoutes = require('./routes/domainRoutes');
 
 const app = express();
 
@@ -34,6 +35,7 @@ mongoose.connect(process.env.MONGODB_URI, {
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
+app.use('/api/domains', domainRoutes);
 
 // Basic route
 app.get('/', (req, res) => {

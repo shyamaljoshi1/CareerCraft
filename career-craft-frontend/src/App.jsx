@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { useEffect } from 'react';
 
 // Auth imports
 import Login from './pages/Auth/Login.jsx';
@@ -21,16 +22,32 @@ import DomainPage from './Components/Domain/DomainPage.jsx';
 import DomainOverview from './Components/Domain/DomainOverview.jsx';
 import TopicPage from './Components/Domain/TopicPage.jsx';
 
-// --- 1. IMPORT YOUR NEW PROFILE PAGE ---
-// (Assuming you created it at this path)
+// Profile page
 import ProfilePage from './pages/ProfilePage/ProfilePage.jsx'; 
+
+// Domain data loader
+import { fetchAllDomains } from './data/allDomains';
 
 import './App.css';
 
 function App() {
-  const { isAuthenticated, loading } = useAuth();
+  const { isAuthenticated, loading } = useAuth();
 
-  return (
+  // Load domains from MongoDB when app starts
+  useEffect(() => {
+    const loadDomains = async () => {
+      try {
+        await fetchAllDomains();
+      } catch (error) {
+        console.error('Failed to load domains:', error);
+        // Optionally show error toast or notification
+      }
+    };
+
+    loadDomains();
+  }, []); // Run only once on component mount
+
+  return (
     <Routes>
       {/* Public Routes */}
       <Route path="/login" element={<Login />} />

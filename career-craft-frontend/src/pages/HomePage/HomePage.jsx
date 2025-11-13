@@ -1,11 +1,42 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from '../../Components/Navbar/Navbar'
 import DomainCard from '../../Components/DomainCard/DomainCard';
-import { getAllDomains } from '../../data/allDomains';
+import { getAllDomains, waitForDomains } from '../../data/allDomains';
 import './HomePage.css';
 
 function HomePage() {
-  const domains = getAllDomains();
+  const [domains, setDomains] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        // Wait for domains to be loaded from the API
+        await waitForDomains();
+        // Then get the domains and set state
+        const allDomainsData = getAllDomains();
+        setDomains(allDomainsData);
+      } catch (error) {
+        console.error('Error loading domains on HomePage:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadData();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="homepage">
+        <Navbar />
+        <div className="hero-section">
+          <h1 className="hero-title">Your Compass in the World of Tech</h1>
+          <p className="hero-subtitle">Loading domains...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="homepage">

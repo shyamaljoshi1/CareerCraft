@@ -1,0 +1,3464 @@
+{
+  "domains": [
+    {
+      "id": "blockchain",
+      "title": "Blockchain",
+      "imageUrl": "/assets/blockchain.JPG",
+      "description": "Blockchain is a distributed, immutable ledger technology that facilitates secure and transparent transactions. It's the foundational technology for cryptocurrencies like Bitcoin and enables decentralized applications (dApps) and new economic systems (DeFi, NFTs).",
+      "quizRoute": "/quiz/blockchain",
+      "topics": [
+        {
+          "id": "intro",
+          "title": "Blockchain & Crypto Fundamentals",
+          "route": "/domains/blockchain/intro",
+          "summary": "Understand the core problem blockchain solves. Learn about ledgers, decentralization, and the cryptographic principles of hashing (SHA-256) and public/private keys.",
+          "freeResources": [
+            {
+              "title": "How does a blockchain work? (YouTube - 3Blue1Brown)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=bBC-P1-NTnE"
+            },
+            {
+              "title": "Public/Private Key Cryptography (Text)",
+              "type": "text",
+              "link": "https://www.geeksforgeeks.org/public-key-private-key-cryptography/"
+            },
+            {
+              "title": "Blockchain 101 (Coinbase)",
+              "type": "text",
+              "link": "https://www.coinbase.com/learn/crypto-basics/what-is-a-blockchain"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Blockchain Basics (Coursera - University at Buffalo)",
+              "link": "https://www.coursera.org/learn/blockchain-basics"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Create a Hash",
+              "desc": "Use a simple online SHA-256 generator to see how changing one letter in a word completely changes the hash."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Bitcoin Foundation",
+              "desc": "Original advocacy organization"
+            },
+            {
+              "name": "Satoshi Nakamoto",
+              "desc": "Pseudonymous creator of Bitcoin"
+            }
+          ]
+        },
+        {
+          "id": "consensus",
+          "title": "Core Concepts: Consensus & Mining",
+          "route": "/domains/blockchain/consensus",
+          "summary": "Learn how a decentralized network agrees on 'the truth.' Understand distributed ledgers, blocks, chains, and consensus mechanisms like Proof-of-Work (PoW) and Proof-of-Stake (PoS).",
+          "freeResources": [
+            {
+              "title": "Proof-of-Work vs Proof-of-Stake (Ethereum Docs)",
+              "type": "text",
+              "link": "https://ethereum.org/en/energy-consumption/proof-of-work-vs-proof-of-stake/"
+            },
+            {
+              "title": "What is a Consensus Algorithm? (Binance Academy)",
+              "type": "text",
+              "link": "https://academy.binance.com/en/articles/what-is-a-consensus-algorithm"
+            },
+            {
+              "title": "Mining Explained (YouTube - StatQuest)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=B-k-NP-0_o"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Book: Mastering Bitcoin (Andreas Antonopoulos)",
+              "link": "https://www.amazon.com/Mastering-Bitcoin-Programming-Open-Blockchain/dp/1491954388"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Build a Simple Blockchain",
+              "desc": "Follow a tutorial to build a very simple blockchain in Python or JavaScript to understand how blocks link."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Bitcoin Core",
+              "desc": "Open-source maintainers of Bitcoin's code"
+            }
+          ]
+        },
+        {
+          "id": "ethereum-smart-contracts",
+          "title": "Ethereum & Smart Contracts",
+          "route": "/domains/blockchain/ethereum-smart-contracts",
+          "summary": "Explore Ethereum: the programmable blockchain. Understand the concept of Smart Contracts, the Ethereum Virtual Machine (EVM), gas, and 'Turing-completeness.'",
+          "freeResources": [
+            {
+              "title": "What is Ethereum? (Official Docs)",
+              "type": "text",
+              "link": "https://ethereum.org/en/what-is-ethereum/"
+            },
+            {
+              "title": "What is a Smart Contract? (Ethereum Docs)",
+              "type": "text",
+              "link": "https://ethereum.org/en/smart-contracts/"
+            },
+            {
+              "title": "What is Gas? (Ethereum Docs)",
+              "type": "text",
+              "link": "https://ethereum.org/en/gas/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Book: Mastering Ethereum (Andreas Antonopoulos)",
+              "link": "https://www.amazon.com/Mastering-Ethereum-Building-Contracts-Decentralized/dp/1491971940"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Analyze a Smart Contract",
+              "desc": "Use a block explorer like Etherscan to find and read the code of a popular smart contract (e.g., a simple token)."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Ethereum Foundation",
+              "desc": "Non-profit supporting Ethereum and related tech"
+            }
+          ]
+        },
+        {
+          "id": "solidity",
+          "title": "Smart Contract Development (Solidity)",
+          "route": "/domains/blockchain/solidity",
+          "summary": "Learn to write smart contracts using Solidity. Understand variables, functions, modifiers, and the ERC-20 token standard. Use tools like Remix IDE.",
+          "freeResources": [
+            {
+              "title": "Solidity Official Docs",
+              "type": "text",
+              "link": "https://docs.soliditylang.org/"
+            },
+            {
+              "title": "Remix IDE (Tool)",
+              "type": "tool",
+              "link": "https://remix.ethereum.org/"
+            },
+            {
+              "title": "CryptoZombies (Interactive Solidity Tutorial)",
+              "type": "course",
+              "link": "https://cryptozombies.io/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Ethereum and Solidity Developer Bootcamp (Udemy)",
+              "link": "https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Simple Storage Contract",
+              "desc": "Write a contract in Remix that can store a number and has functions to set and retrieve it."
+            },
+            {
+              "title": "Create a Simple ERC-20 Token",
+              "desc": "Use an OpenZeppelin wizard to create a basic, secure ERC-20 token contract."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "OpenZeppelin",
+              "desc": "Provides security standards for smart contracts"
+            }
+          ]
+        },
+        {
+          "id": "dapp-web3",
+          "title": "dApp Development (Web3)",
+          "route": "/domains/blockchain/dapp-web3",
+          "summary": "Learn to build a decentralized application (dApp). Connect a frontend (React) to your smart contract using libraries like Ethers.js or Web3.js and a wallet like MetaMask.",
+          "freeResources": [
+            {
+              "title": "Ethers.js Docs",
+              "type": "text",
+              "link": "https://docs.ethers.org/v5/"
+            },
+            {
+              "title": "MetaMask Docs",
+              "type": "tool",
+              "link": "https://docs.metamask.io/guide/"
+            },
+            {
+              "title": "Alchemy University (Free Web3 Courses)",
+              "type": "course",
+              "link": "https://university.alchemy.com/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Build a dApp on Ethereum (Educative)",
+              "link": "https://www.educative.io/courses/build-dapp-on-ethereum"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Simple dApp",
+              "desc": "Create a simple web page (React) that connects to MetaMask and reads the number from your 'Simple Storage' contract."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Alchemy",
+              "desc": "A leading provider of blockchain node infrastructure"
+            },
+            {
+              "name": "Infura",
+              "desc": "A provider of blockchain node infrastructure"
+            }
+          ]
+        },
+        {
+          "id": "tooling",
+          "title": "Blockchain Tooling (Truffle/Hardhat)",
+          "route": "/domains/blockchain/tooling",
+          "summary": "Move beyond Remix to professional development environments. Learn to compile, test, and deploy contracts using local development frameworks like Hardhat or Truffle.",
+          "freeResources": [
+            {
+              "title": "Hardhat Docs",
+              "type": "text",
+              "link": "https://hardhat.org/docs"
+            },
+            {
+              "title": "Truffle Suite Docs",
+              "type": "text",
+              "link": "https://trufflesuite.com/docs/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Blockchain Advanced Developer (Udemy)",
+              "link": "https://www.udemy.com/course/advanced-blockchain-developer-program/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Test Your Contract",
+              "desc": "Use Hardhat or Truffle to write automated tests for your ERC-20 token contract."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Nomic Foundation",
+              "desc": "Maintains Hardhat"
+            },
+            {
+              "name": "Truffle Suite",
+              "desc": "Development framework by ConsenSys"
+            }
+          ]
+        },
+        {
+          "id": "defi",
+          "title": "Decentralized Finance (DeFi)",
+          "route": "/domains/blockchain/defi",
+          "summary": "Explore the 'money legos' of crypto. Understand key DeFi protocols like Decentralized Exchanges (DEXs like Uniswap), and lending/borrowing platforms (Aave, Compound).",
+          "freeResources": [
+            {
+              "title": "What is DeFi? (Coinbase)",
+              "type": "text",
+              "link": "https://www.coinbase.com/learn/crypto-basics/what-is-defi"
+            },
+            {
+              "title": "How Uniswap Works (Uniswap Docs)",
+              "type": "text",
+              "link": "https://docs.uniswap.org/protocol/V2/concepts/protocol-overview/how-uniswap-works"
+            },
+            {
+              "title": "Aave Protocol Overview",
+              "type": "text",
+              "link": "https://docs.aave.com/developers/v/2.0/the-protocol"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "DeFi and the Future of Finance (Coursera - Duke)",
+              "link": "https://www.coursera.org/learn/defi-finance"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Use a DeFi Protocol",
+              "desc": "Use a testnet (e.g., Sepolia) to swap two test tokens on Uniswap or borrow a test asset on Aave."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Uniswap",
+              "desc": "A leading Decentralized Exchange (DEX)"
+            },
+            {
+              "name": "Aave",
+              "desc": "A leading lending and borrowing protocol"
+            }
+          ]
+        },
+        {
+          "id": "nfts",
+          "title": "NFTs (Non-Fungible Tokens)",
+          "route": "/domains/blockchain/nfts",
+          "summary": "Understand unique digital assets. Learn about the ERC-721 and ERC-1155 token standards, NFT marketplaces (OpenSea), and use cases for digital art and collectibles.",
+          "freeResources": [
+            {
+              "title": "What is an NFT? (Ethereum Docs)",
+              "type": "text",
+              "link": "https://ethereum.org/en/nft/"
+            },
+            {
+              "title": "ERC-721 Token Standard (EIP)",
+              "type": "text",
+              "link": "https://eips.ethereum.org/EIPS/eip-721"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "NFTs (Non-Fungible Tokens) (Udemy)",
+              "link": "https://www.udemy.com/course/the-complete-nft-course-learn-everything-about-nfts/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Create your own NFT",
+              "desc": "Follow a tutorial to write and deploy your own ERC-721 contract and mint an NFT on a testnet."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "OpenSea",
+              "desc": "A large peer-to-peer NFT marketplace"
+            }
+          ]
+        },
+        {
+          "id": "scalability-l2",
+          "title": "Scalability & Layer 2 Solutions",
+          "route": "/domains/blockchain/scalability-l2",
+          "summary": "Learn how to make blockchains faster and cheaper. Understand the 'Blockchain Trilemma,' Layer 2 (L2) scaling solutions, rollups (Optimistic/ZK-Rollups), and sidechains.",
+          "freeResources": [
+            {
+              "title": "What is Layer 2? (Ethereum Docs)",
+              "type": "text",
+              "link": "https://ethereum.org/en/layer-2/"
+            },
+            {
+              "title": "What are ZK-Rollups? (Binance Academy)",
+              "type": "text",
+              "link": "https://academy.binance.com/en/articles/what-are-zk-rollups"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Blockchain Scalability (Advanced)",
+              "link": "https.com/topics/blockchain-scalability"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Bridge to a Layer 2",
+              "desc": "Use a bridge to move test Ether from a testnet (e.g., Sepolia) to a Layer 2 testnet (e.g., Optimism Goerli)."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Optimism",
+              "desc": "A leading Layer 2 Optimistic Rollup"
+            },
+            {
+              "name": "Polygon",
+              "desc": "A platform of scaling solutions (Sidechains, ZK)"
+            },
+            {
+              "name": "Arbitrum",
+              "desc": "A leading Layer 2 Optimistic Rollup"
+            }
+          ]
+        },
+        {
+          "id": "security",
+          "title": "Smart Contract Security",
+          "route": "/domains/blockchain/security",
+          "summary": "Learn to write secure, immutable code. Understand common attacks like reentrancy, integer overflows, and how to prevent them. Learn about auditing tools and best practices.",
+          "freeResources": [
+            {
+              "title": "Solidity Security Best Practices (ConsenSys)",
+              "type": "text",
+              "link": "https://consensys.github.io/smart-contract-best-practices/"
+            },
+            {
+              "title": "Ethernaut (Security 'Capture the Flag' game)",
+              "type": "course",
+              "link": "https://ethernaut.openzeppelin.com/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Smart Contract Security & Auditing (Udemy)",
+              "link": "https://www.udemy.com/course/blockchain-smart-contract-security-vulnerabilities/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Beat the Ethernaut",
+              "desc": "Try to complete the first 3 levels of the Ethernaut wargame."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "ConsenSys",
+              "desc": "A major blockchain software technology company"
+            },
+            {
+              "name": "Trail of Bits",
+              "desc": "A leading blockchain security and auditing firm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cloudcomputing",
+      "title": "Cloud Computing",
+      "imageUrl": "/assets/cloudcomputing.JPG",
+      "description": "Cloud Computing is the on-demand delivery of IT resources—including servers, storage, databases, networking, and software—over the Internet ('the cloud') with pay-as-you-go pricing. It allows companies to innovate faster and be more flexible without managing physical hardware.",
+      "quizRoute": "/quiz/cloudcomputing",
+      "topics": [
+        {
+          "id": "intro",
+          "title": "Introduction to Cloud Computing",
+          "route": "/domains/cloudcomputing/intro",
+          "summary": "Learn the fundamental concepts: What is the cloud? What are the service models (IaaS, PaaS, SaaS) and deployment models (Public, Private, Hybrid)?",
+          "freeResources": [
+            {
+              "title": "What is Cloud Computing? (AWS)",
+              "type": "text",
+              "link": "https://aws.amazon.com/what-is-cloud-computing/"
+            },
+            {
+              "title": "IaaS, PaaS, SaaS Explained (YouTube - Fireship)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=kga1-G8118A"
+            },
+            {
+              "title": "Azure Fundamentals (Microsoft Learn)",
+              "type": "course",
+              "link": "https://learn.microsoft.com/en-us/training/paths/az-900-describe-cloud-concepts/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "AWS Cloud Practitioner Essentials (Coursera)",
+              "link": "https://www.coursera.org/learn/aws-cloud-practitioner-essentials"
+            },
+            {
+              "title": "Introduction to Cloud Computing (Udemy)",
+              "link": "https://www.udemy.com/course/introduction-to-cloud-computing-on-amazon-aws-for-beginners/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Service Model Analysis",
+              "desc": "For a given app (e.g., email), describe how you would build it using IaaS vs. PaaS vs. buying it as SaaS."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Amazon Web Services",
+              "desc": "The dominant public cloud provider"
+            },
+            {
+              "name": "Microsoft Azure",
+              "desc": "The second-largest cloud provider"
+            },
+            {
+              "name": "Google Cloud Platform",
+              "desc": "A major cloud provider strong in data/ML"
+            }
+          ]
+        },
+        {
+          "id": "compute",
+          "title": "Core Compute Services",
+          "route": "/domains/cloudcomputing/compute",
+          "summary": "Learn how to run code in the cloud, from Virtual Machines (VMs) to Containers and Serverless functions.",
+          "freeResources": [
+            {
+              "title": "What is Amazon EC2? (VMs)",
+              "type": "text",
+              "link": "https://aws.amazon.com/ec2/what-is-ec2/"
+            },
+            {
+              "title": "What is Serverless? (Cloudflare)",
+              "type": "text",
+              "link": "https://www.cloudflare.com/learning/serverless/what-is-serverless/"
+            },
+            {
+              "title": "What are Containers & Kubernetes? (AWS)",
+              "type": "text",
+              "link": "https://aws.amazon.com/containers/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "A Practical Guide to AWS Lambda (Udemy)",
+              "link": "https://www.udemy.com/course/aws-lambda-a-practical-guide/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Launch a Web Server",
+              "desc": "Launch a simple 't2.micro' EC2 instance (or Azure VM) and host a static HTML page."
+            },
+            {
+              "title": "Deploy a Serverless Function",
+              "desc": "Create an AWS Lambda (or Azure Function) that returns 'Hello World' when called."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Docker",
+              "desc": "The standard for containerization"
+            },
+            {
+              "name": "CNCF",
+              "desc": "Cloud Native Computing Foundation (hosts Kubernetes)"
+            }
+          ]
+        },
+        {
+          "id": "storage-databases",
+          "title": "Cloud Storage & Databases",
+          "route": "/domains/cloudcomputing/storage-databases",
+          "summary": "Learn where to store your data. Understand Object Storage (S3, Blob), Block Storage (EBS), and managed SQL (RDS) & NoSQL (DynamoDB) databases.",
+          "freeResources": [
+            {
+              "title": "What is Amazon S3? (Object Storage)",
+              "type": "text",
+              "link": "https://aws.amazon.com/s3/"
+            },
+            {
+              "title": "What is Amazon RDS? (Managed SQL)",
+              "type": "text",
+              "link": "https://aws.amazon.com/rds/"
+            },
+            {
+              "title": "What is DynamoDB? (Managed NoSQL)",
+              "type": "text",
+              "link": "https://aws.amazon.com/dynamodb/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Azure Storage Fundamentals (Microsoft Learn)",
+              "link": "https://learn.microsoft.com/en-us/training/modules/azure-storage-fundamentals/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Host a Static Website on S3",
+              "desc": "Create an S3 bucket, upload your HTML/CSS files, and configure it for static website hosting."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "MongoDB",
+              "desc": "Popular NoSQL database, offered as a cloud service"
+            }
+          ]
+        },
+        {
+          "id": "networking",
+          "title": "Cloud Networking",
+          "route": "/domains/cloudcomputing/networking",
+          "summary": "Learn to build your own private network in the cloud. Understand Virtual Private Clouds (VPC/VNet), Subnets, Security Groups, and Load Balancers.",
+          "freeResources": [
+            {
+              "title": "What is a VPC? (AWS)",
+              "type": "text",
+              "link": "https.com/vpc/"
+            },
+            {
+              "title": "What is a Load Balancer? (AWS)",
+              "type": "text",
+              "link": "https://aws.amazon.com/elastic-load-balancing/"
+            },
+            {
+              "title": "Azure Networking (YouTube - John Savill)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=02-9bX-g7-o"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "AWS Certified Advanced Networking (Specialty)",
+              "link": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Build a 2-Tier VPC",
+              "desc": "Design a VPC with a public subnet (for a web server) and a private subnet (for a database)."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Cloudflare",
+              "desc": "Major provider of cloud networking and security services"
+            }
+          ]
+        },
+        {
+          "id": "iam",
+          "title": "Identity & Access Management (IAM)",
+          "route": "/domains/cloudcomputing/iam",
+          "summary": "Control who can do what in your cloud. Learn about Users, Groups, Roles, Policies, and the Principle of Least Privilege.",
+          "freeResources": [
+            {
+              "title": "What is IAM? (AWS)",
+              "type": "text",
+              "link": "https://aws.amazon.com/iam/"
+            },
+            {
+              "title": "Azure Active Directory (Microsoft)",
+              "type": "text",
+              "link": "https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "AWS Certified Security - Specialty (Certification)",
+              "link": "https://aws.amazon.com/certification/certified-security-specialty/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Create a 'Read-Only' User",
+              "desc": "Create an IAM policy and user that has read-only access to your S3 buckets, but no write permissions."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Okta",
+              "desc": "A leading identity management provider"
+            }
+          ]
+        },
+        {
+          "id": "architecture",
+          "title": "Cloud Architecture & Design",
+          "route": "/domains/cloudcomputing/architecture",
+          "summary": "Learn how to design robust systems. Understand the 'Well-Architected Framework' (Cost, Performance, Security, etc.), High Availability, and Fault Tolerance.",
+          "freeResources": [
+            {
+              "title": "AWS Well-Architected Framework",
+              "type": "text",
+              "link": "https://aws.amazon.com/architecture/well-architected/"
+            },
+            {
+              "title": "Azure Well-Architected Framework",
+              "type": "text",
+              "link": "https://learn.microsoft.com/en-us/azure/architecture/framework/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "AWS Certified Solutions Architect - Associate (SAA-C03)",
+              "link": "https.com/certification/certified-solutions-architect-associate/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Design a High-Availability App",
+              "desc": "Draw an architecture diagram for a website that can survive one server failing (Hint: use a load balancer and multiple servers)."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Gartner",
+              "desc": "Analyst firm that defines cloud architecture best practices"
+            }
+          ]
+        },
+        {
+          "id": "security",
+          "title": "Cloud Security",
+          "route": "/domains/cloudcomputing/security",
+          "summary": "Learn to secure your cloud. Understand the 'Shared Responsibility Model', encryption (at-rest/in-transit), key management (KMS), and DDoS protection.",
+          "freeResources": [
+            {
+              "title": "Shared Responsibility Model (AWS)",
+              "type": "text",
+              "link": "https.com/compliance/shared-responsibility-model/"
+            },
+            {
+              "title": "AWS Key Management Service (KMS)",
+              "type": "text",
+              "link": "https://aws.amazon.com/kms/"
+            },
+            {
+              "title": "Azure Security Center (Microsoft)",
+              "type": "text",
+              "link": "https.com/services/security-center/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "(ISC)² CCSP Certification",
+              "link": "https.com/Certifications/CCSP"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Secure an S3 Bucket",
+              "desc": "Configure an S3 bucket to be fully private, enable server-side encryption, and block all public access."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Palo Alto Networks",
+              "desc": "Leader in cloud security solutions"
+            }
+          ]
+        },
+        {
+          "id": "devops-iac",
+          "title": "DevOps & Infrastructure as Code",
+          "route": "/domains/cloudcomputing/devops-iac",
+          "summary": "Manage your cloud with code. Learn Infrastructure as Code (IaC) with Terraform or CloudFormation, and build CI/CD pipelines.",
+          "freeResources": [
+            {
+              "title": "What is Infrastructure as Code? (HashiCorp)",
+              "type": "text",
+              "link": "https://www.hashicorp.com/overview/infrastructure-as-code"
+            },
+            {
+              "title": "Terraform Get Started (HashiCorp)",
+              "type": "course",
+              "link": "https://developer.hashicorp.com/terraform/tutorials/aws-get-started"
+            },
+            {
+              "title": "What is CI/CD? (GitHub Actions)",
+              "type": "text",
+              "link": "https://github.com/features/actions"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Terraform Associate Certification (HashiCorp)",
+              "link": "https://www.hashicorp.com/certification/terraform-associate"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Deploy an S3 Bucket with Terraform",
+              "desc": "Write a simple Terraform file to create and configure an S3 bucket instead of using the console."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "HashiCorp",
+              "desc": "Creators of Terraform"
+            },
+            {
+              "name": "GitHub",
+              "desc": "Provides GitHub Actions for CI/CD"
+            }
+          ]
+        },
+        {
+          "id": "monitoring-cost",
+          "title": "Monitoring & Cost Management",
+          "route": "/domains/cloudcomputing/monitoring-cost",
+          "summary": "Learn to watch your apps and your wallet. Understand logging (CloudWatch, Azure Monitor), create alerts, and use cost calculators & budgets.",
+          "freeResources": [
+            {
+              "title": "Amazon CloudWatch (Monitoring)",
+              "type": "text",
+              "link": "https.com/cloudwatch/"
+            },
+            {
+              "title": "AWS Cost Management",
+              "type": "text",
+              "link": "https://aws.amazon.com/cost-management/"
+            },
+            {
+              "title": "Azure Cost Management (Microsoft)",
+              "type": "text",
+              "link": "https.com/services/cost-management/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Datadog (Monitoring Platform)",
+              "link": "https.com/product/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Create a Billing Alert",
+              "desc": "Set up a billing alert in AWS or Azure to notify you via email if your spending is projected to exceed $10."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Datadog",
+              "desc": "A leading 3rd-party monitoring platform"
+            },
+            {
+              "name": "Splunk",
+              "desc": "A leading platform for log analysis"
+            }
+          ]
+        },
+        {
+          "id": "certifications",
+          "title": "Certifications & Careers",
+          "route": "/domains/cloudcomputing/certifications",
+          "summary": "Plan your career. Learn the certification paths for AWS, Azure, and GCP, and understand roles like Cloud Engineer, Solutions Architect, and DevOps Engineer.",
+          "freeResources": [
+            {
+              "title": "AWS Certification Paths",
+              "type": "text",
+              "link": "https.com/certification/"
+            },
+            {
+              "title": "Azure Certification Paths",
+              "type": "text",
+              "link": "https://learn.microsoft.com/en-us/certifications/"
+            },
+            {
+              "title": "Google Cloud Certification Paths",
+              "type": "text",
+              "link": "https.com/certification"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Ultimate AWS SAA-C03 (Udemy - Stephane Maarek)",
+              "link": "https.com/course/aws-certified-solutions-architect-associate-saa-c03/"
+            },
+            {
+              "title": "AZ-900 Azure Fundamentals (Udemy)",
+              "link": "https://www.udemy.com/course/microsoft-azure-az-900-certification-exam-prep/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Build Your Career Plan",
+              "desc": "Choose one cloud platform (AWS, Azure, or GCP) and map out the first two certifications you would take."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "A Cloud Guru",
+              "desc": "Popular platform for cloud certification training"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cybersecurity",
+      "title": "Cybersecurity",
+      "quizRoute": "/quiz/cybersecurity",
+      "imageUrl": "/assets/cybersecurity.jpg",
+      "description": "Cybersecurity protects systems, networks, and data from digital threats. It combines technology, processes, and human expertise to prevent attacks, detect breaches, and ensure data integrity. The field spans areas such as ethical hacking, forensics, SIEM, and cloud security.",
+      "topics": [
+        {
+          "id": "intro",
+          "title": "Introduction to Cybersecurity",
+          "route": "/domains/cybersecurity/intro",
+          "summary": "Get a complete overview of the cybersecurity landscape — its importance, threats, goals, and career paths.",
+          "freeResources": [
+            {
+              "title": "Cybersecurity Basics (IBM)",
+              "type": "text",
+              "link": "https://www.ibm.com/topics/cybersecurity"
+            },
+            {
+              "title": "Introduction to Cybersecurity (Cisco Networking Academy)",
+              "type": "course",
+              "link": "https://www.netacad.com/courses/security/introduction-cybersecurity"
+            },
+            {
+              "title": "Cybersecurity 101 (YouTube - Simplilearn)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=inWWhr5tnEA"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Coursera — Introduction to Cybersecurity by NYU",
+              "link": "https://www.coursera.org/learn/intro-cyber-security"
+            },
+            {
+              "title": "Udemy — Cybersecurity for Beginners",
+              "link": "https://www.udemy.com/course/cybersecurity-for-beginners/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Cyber Threat Report",
+              "desc": "Research and summarize top global cyber threats of the past year."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "CISA",
+              "desc": "Cybersecurity and Infrastructure Security Agency"
+            },
+            {
+              "name": "CERT",
+              "desc": "Computer Emergency Response Team"
+            }
+          ]
+        },
+        {
+          "id": "networking",
+          "title": "Networking Fundamentals",
+          "route": "/domains/cybersecurity/networking",
+          "summary": "Learn how data travels through networks, key protocols, and how attackers exploit network weaknesses.",
+          "freeResources": [
+            {
+              "title": "Computer Networking Basics (GeeksforGeeks)",
+              "type": "text",
+              "link": "https://www.geeksforgeeks.org/computer-network-tutorials/"
+            },
+            {
+              "title": "OSI Model Explained (YouTube - PowerCert)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=vv4y_uOneC0"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Udemy — Networking Fundamentals",
+              "link": "https://www.udemy.com/course/comptia-network-certification-n10-008/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Packet Sniffer using Python",
+              "desc": "Capture and analyze network packets using Scapy or Wireshark."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Cisco",
+              "desc": "Global leader in networking and network security"
+            }
+          ]
+        },
+        {
+          "id": "linux",
+          "title": "Linux for Security",
+          "route": "/domains/cybersecurity/linux",
+          "summary": "Linux is the backbone of cybersecurity. Learn essential commands, file permissions, and server hardening.",
+          "freeResources": [
+            {
+              "title": "Linux Command Handbook",
+              "type": "text",
+              "link": "https://www.freecodecamp.org/news/the-linux-commands-handbook/"
+            },
+            {
+              "title": "Linux Security Basics (YouTube - NetworkChuck)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=ivlTiwUhn5I"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Linux Administration Bootcamp (Udemy)",
+              "link": "https://www.udemy.com/course/linux-administration-bootcamp/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Bash Script for Log Monitoring",
+              "desc": "Automate security log monitoring using Bash and grep."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Kali Linux",
+              "desc": "Popular OS for penetration testing and forensics"
+            }
+          ]
+        },
+        {
+          "id": "crypto",
+          "title": "Cryptography",
+          "route": "/domains/cybersecurity/crypto",
+          "summary": "Understand the science of securing communication through encryption, hashing, and key management.",
+          "freeResources": [
+            {
+              "title": "Cryptography Tutorial (GeeksforGeeks)",
+              "type": "text",
+              "link": "https://www.geeksforgeeks.org/cryptography-and-network-security/"
+            },
+            {
+              "title": "Introduction to Cryptography (YouTube - Computerphile)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=NmM9HA2MQGI"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Coursera — Cryptography I (Stanford University)",
+              "link": "https://www.coursera.org/learn/crypto"
+            }
+          ],
+          "projects": [
+            {
+              "title": "RSA Encryption Tool",
+              "desc": "Implement RSA encryption and decryption in Python."
+            },
+            {
+              "title": "File Integrity Checker",
+              "desc": "Verify file integrity using SHA256 hashing."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "NIST",
+              "desc": "Defines global cryptographic standards"
+            },
+            {
+              "name": "OWASP",
+              "desc": "Provides cryptography best practices for web apps"
+            }
+          ]
+        },
+        {
+          "id": "web-security",
+          "title": "Web Application Security",
+          "route": "/domains/cybersecurity/web-security",
+          "summary": "Explore vulnerabilities like SQL Injection, XSS, and CSRF, and learn to protect web applications using OWASP guidelines.",
+          "freeResources": [
+            {
+              "title": "OWASP Top 10",
+              "type": "text",
+              "link": "https://owasp.org/www-project-top-ten/"
+            },
+            {
+              "title": "Web Security Basics (YouTube - HackerSploit)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=k1zGz55EQ7I"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "PortSwigger Academy (Free + Paid Labs)",
+              "link": "https://portswigger.net/web-security"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Vulnerable Web App Lab",
+              "desc": "Setup and exploit DVWA to practice real-world attacks."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "OWASP",
+              "desc": "Global non-profit focused on web security awareness"
+            }
+          ]
+        },
+        {
+          "id": "pentesting",
+          "title": "Ethical Hacking & PenTesting",
+          "route": "/domains/cybersecurity/pentesting",
+          "summary": "Learn to ethically find and exploit vulnerabilities in systems to strengthen their defenses.",
+          "freeResources": [
+            {
+              "title": "TryHackMe (Free Labs)",
+              "link": "https://tryhackme.com/"
+            },
+            {
+              "title": "Penetration Testing Basics (YouTube - HackerSploit)",
+              "link": "https://www.youtube.com/watch?v=3Kq1MIfTWCE"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "EC-Council — CEH Certification",
+              "link": "https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Vulnerability Assessment Report",
+              "desc": "Scan a test network using Nmap and prepare an assessment report."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Offensive Security",
+              "desc": "Creators of Kali Linux and OSCP certification"
+            }
+          ]
+        },
+        {
+          "id": "forensics",
+          "title": "Incident Response & Digital Forensics",
+          "route": "/domains/cybersecurity/forensics",
+          "summary": "Learn how to respond to security incidents and analyze digital evidence using forensic tools.",
+          "freeResources": [
+            {
+              "title": "NIST Incident Response Guidelines",
+              "type": "text",
+              "link": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf"
+            },
+            {
+              "title": "Digital Forensics Basics (YouTube - DFIRScience)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=6eLr1K9J1Sg"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Coursera — Digital Forensics Essentials",
+              "link": "https://www.coursera.org/learn/digital-forensics"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Log-based Intrusion Detection",
+              "desc": "Create a script to detect anomalies in system logs."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "SANS Institute",
+              "desc": "Global leader in digital forensics training"
+            }
+          ]
+        },
+        {
+          "id": "cloud",
+          "title": "Cloud & Network Security",
+          "route": "/domains/cybersecurity/cloud",
+          "summary": "Protect cloud-based infrastructure and network environments using modern tools and policies.",
+          "freeResources": [
+            {
+              "title": "AWS Cloud Security Fundamentals",
+              "link": "https://aws.amazon.com/security/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Udemy — AWS Certified Security Specialty",
+              "link": "https://www.udemy.com/course/aws-certified-security-specialty/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Secure AWS Environment",
+              "desc": "Set up IAM roles, security groups, and monitor logs for a cloud instance."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "AWS Security",
+              "desc": "Offers security best practices for cloud users"
+            },
+            {
+              "name": "Microsoft Defender",
+              "desc": "Cloud-native threat protection platform"
+            }
+          ]
+        },
+        {
+          "id": "siem",
+          "title": "SIEM & Log Analysis",
+          "route": "/domains/cybersecurity/siem",
+          "summary": "Understand how Security Information and Event Management tools help detect and analyze threats in real time.",
+          "freeResources": [
+            {
+              "title": "Introduction to SIEM (LogRhythm Blog)",
+              "link": "https://logrhythm.com/blog/what-is-siem/"
+            },
+            {
+              "title": "ELK Stack Tutorial for Beginners (YouTube - Tech TFQ)",
+              "link": "https://www.youtube.com/watch?v=pgWSdVt8__Y"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "SIEM Administration (Udemy)",
+              "link": "https://www.udemy.com/course/siem-administration/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "SIEM Log Dashboard",
+              "desc": "Build a log visualization dashboard using the ELK Stack."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Splunk",
+              "desc": "Leading SIEM platform for log analysis"
+            },
+            {
+              "name": "IBM QRadar",
+              "desc": "Enterprise-grade SIEM for threat detection"
+            }
+          ]
+        },
+        {
+          "id": "certifications",
+          "title": "Certifications & Career Prep",
+          "route": "/domains/cybersecurity/certifications",
+          "summary": "Plan your career path with key certifications, skill-building resources, and interview prep guides.",
+          "freeResources": [
+            {
+              "title": "Cybersecurity Career Roadmap (NIST NICE Framework)",
+              "link": "https://www.nist.gov/itl/applied-cybersecurity/nice/resources/framework"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "CompTIA Security+",
+              "link": "https://www.comptia.org/certifications/security"
+            },
+            {
+              "title": "Certified Information Systems Security Professional (CISSP)",
+              "link": "https://www.isc2.org/Certifications/CISSP"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Cybersecurity Resume + Portfolio",
+              "desc": "Create a professional cybersecurity portfolio with GitHub projects and certifications."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "(ISC)²",
+              "desc": "Provides CISSP and other global cybersecurity certifications"
+            },
+            {
+              "name": "CompTIA",
+              "desc": "Offers Security+, Network+, and related certifications"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "datascience",
+      "title": "Data Science",
+      "imageUrl": "/assets/datascience.JPG",
+      "description": "Data Science is an interdisciplinary field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from structured and unstructured data. It combines statistics, data analysis, machine learning, and business domain knowledge to turn raw data into actionable insights.",
+      "quizRoute": "/quiz/datascience",
+      "topics": [
+        {
+          "id": "intro",
+          "title": "Foundations of Data Science",
+          "route": "/domains/datascience/intro",
+          "summary": "Understand the data science lifecycle: asking the right questions, data collection, data wrangling, exploratory data analysis (EDA), modeling, and communication.",
+          "freeResources": [
+            {
+              "title": "What is Data Science? (IBM)",
+              "type": "text",
+              "link": "https://www.ibm.com/topics/data-science"
+            },
+            {
+              "title": "The Data Science Lifecycle",
+              "type": "text",
+              "link": "https://www.wgu.edu/blog/what-is-data-science-lifecycle2007.html"
+            },
+            {
+              "title": "Introduction to Data Science (YouTube - freeCodeCamp)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=ua-a7aJ-9bA"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Coursera — What is Data Science? (IBM)",
+              "link": "https://www.coursera.org/learn/what-is-data-science"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Kaggle Dataset Exploration",
+              "desc": "Pick a simple dataset from Kaggle (like the Titanic) and write down the questions you would try to answer."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Kaggle",
+              "desc": "The world's largest data science community"
+            }
+          ]
+        },
+        {
+          "id": "statistics",
+          "title": "Statistics & Probability",
+          "route": "/domains/datascience/statistics",
+          "summary": "Master the core of data analysis. Learn descriptive statistics (mean, median, mode), inferential statistics, hypothesis testing (A/B testing), and core probability concepts.",
+          "freeResources": [
+            {
+              "title": "Statistics & Probability (Khan Academy)",
+              "type": "course",
+              "link": "https://www.khanacademy.org/math/statistics-probability"
+            },
+            {
+              "title": "StatQuest (YouTube Channel)",
+              "type": "video",
+              "link": "https://www.youtube.com/c/statquest"
+            },
+            {
+              "title": "Hypothesis Testing Explained",
+              "type": "text",
+              "link": "https://www.investopedia.com/terms/h/hypothesistesting.asp"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Coursera — Statistics with R (Duke University)",
+              "link": "https://www.coursera.org/specializations/statistics"
+            }
+          ],
+          "projects": [
+            {
+              "title": "A/B Test Analysis",
+              "desc": "Given a sample A/B test dataset, determine if the new version is a statistically significant improvement."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "American Statistical Association",
+              "desc": "Professional stats organization"
+            }
+          ]
+        },
+        {
+          "id": "programming",
+          "title": "Programming for Data (Python/R)",
+          "route": "/domains/datascience/programming",
+          "summary": "Learn the tools to manipulate data. Master Python (with Pandas, NumPy, Matplotlib) or R (with dplyr, tidyr, ggplot2).",
+          "freeResources": [
+            {
+              "title": "Pandas User Guide (Python)",
+              "type": "text",
+              "link": "https://pandas.pydata.org/docs/user_guide/index.html"
+            },
+            {
+              "title": "R for Data Science (Book - Free Online)",
+              "type": "course",
+              "link": "https://r4ds.had.co.nz/"
+            },
+            {
+              "title": "NumPy Quickstart",
+              "type": "text",
+              "link": "https://numpy.org/doc/stable/user/quickstart.html"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Data Scientist with Python (DataCamp)",
+              "link": "https://www.datacamp.com/tracks/data-scientist-with-python"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Analyze a CSV with Pandas",
+              "desc": "Use Pandas to load a CSV, find the min/max/mean of a column, and filter for specific values."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Posit (formerly RStudio)",
+              "desc": "Creators of RStudio and Tidyverse"
+            }
+          ]
+        },
+        {
+          "id": "wrangling",
+          "title": "Data Wrangling & Cleaning",
+          "route": "/domains/datascience/wrangling",
+          "summary": "The most important job. Learn to handle missing values, correct data types, merge and join datasets, and reshape data into a 'tidy' format.",
+          "freeResources": [
+            {
+              "title": "Data Cleaning (Kaggle)",
+              "type": "course",
+              "link": "https://www.kaggle.com/learn/data-cleaning"
+            },
+            {
+              "title": "Tidy Data (R for Data Science)",
+              "type": "text",
+              "link": "https://r4ds.had.co.nz/tidy-data.html"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Data Wrangling, Analysis, and AB Testing (Udemy)",
+              "link": "https://www.udemy.com/course/data-wrangling-ab-testing-and-analysis-in-python/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Clean a 'Dirty' Dataset",
+              "desc": "Find a messy dataset online and write a script to clean it (impute missing values, fix formats, remove duplicates)."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Kaggle",
+              "desc": "Provides many messy, real-world datasets"
+            }
+          ]
+        },
+        {
+          "id": "eda",
+          "title": "Exploratory Data Analysis (EDA)",
+          "route": "/domains/datascience/eda",
+          "summary": "Get to know your data. Learn to use statistics and visualizations to find patterns, identify anomalies, and formulate hypotheses.",
+          "freeResources": [
+            {
+              "title": "EDA Guide (GeeksforGeeks)",
+              "type": "text",
+              "link": "https://www.geeksforgeeks.org/exploratory-data-analysis-in-python/"
+            },
+            {
+              "title": "Kaggle — EDA Course",
+              "type": "course",
+              "link": "https://www.kaggle.com/learn/exploratory-data-analysis"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Data Science: EDA (Coursera - Johns Hopkins)",
+              "link": "https://www.coursera.org/learn/exploratory-data-analysis"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Titanic EDA",
+              "desc": "Perform a full EDA on the Titanic dataset. Find correlations (e.g., class vs. survival) and visualize them."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Kaggle",
+              "desc": "Hosts thousands of public notebooks with EDA"
+            }
+          ]
+        },
+        {
+          "id": "visualization",
+          "title": "Data Visualization",
+          "route": "/domains/datascience/visualization",
+          "summary": "Learn to tell a story with data. Master libraries (Matplotlib, Seaborn, Plotly) for code-based charts and BI tools (Tableau, Power BI) for dashboards.",
+          "freeResources": [
+            {
+              "title": "Seaborn Tutorial (Python)",
+              "type": "text",
+              "link": "https://seaborn.pydata.org/tutorial.html"
+            },
+            {
+              "title": "Tableau Public (Free Tool)",
+              "type": "tool",
+              "link": "https://public.tableau.com/en-us/s/"
+            },
+            {
+              "title": "Data Visualization (Kaggle)",
+              "type": "course",
+              "link": "https://www.kaggle.com/learn/data-visualization"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Tableau A-Z (Udemy)",
+              "link": "https://www.udemy.com/course/tableau10/"
+            },
+            {
+              "title": "Data Visualization with Python (DataCamp)",
+              "link": "https://www.datacamp.com/tracks/data-visualization-with-python"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Build an Interactive Dashboard",
+              "desc": "Use Tableau Public or Power BI to create a dashboard for a dataset of your choice."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Tableau",
+              "desc": "Leading business intelligence platform"
+            },
+            {
+              "name": "Microsoft Power BI",
+              "desc": "Leading business intelligence platform"
+            }
+          ]
+        },
+        {
+          "id": "machinelearning",
+          "title": "Machine Learning",
+          "route": "/domains/datascience/machinelearning",
+          "summary": "Learn to make predictions. Understand Supervised (Regression, Classification) and Unsupervised (Clustering) models. Use Scikit-learn to train and evaluate models.",
+          "freeResources": [
+            {
+              "title": "Scikit-learn User Guide",
+              "type": "text",
+              "link": "https://scikit-learn.org/stable/user_guide.html"
+            },
+            {
+              "title": "Intro to ML (Kaggle)",
+              "type": "course",
+              "link": "https://www.kaggle.com/learn/intro-to-machine-learning"
+            },
+            {
+              "title": "StatQuest ML (YouTube)",
+              "type": "video",
+              "link": "https://www.youtube.com/playlist?list=PLblh5JKoVwRCl-tYl-9-fN-0-Dqg2T-xP"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Coursera — Machine Learning (Andrew Ng)",
+              "link": "https://www.coursera.org/learn/machine-learning"
+            }
+          ],
+          "projects": [
+            {
+              "title": "House Price Prediction",
+              "desc": "Use Scikit-learn to build a linear regression model to predict house prices from a dataset."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Scikit-learn",
+              "desc": "The foundational ML library for Python"
+            }
+          ]
+        },
+        {
+          "id": "bigdata-sql",
+          "title": "Big Data & SQL",
+          "route": "/domains/datascience/bigdata-sql",
+          "summary": "Learn to get data from databases. Master SQL (SELECT, JOIN, GROUP BY). Understand Big Data concepts (Hadoop, Spark) and cloud data warehouses (Snowflake, BigQuery).",
+          "freeResources": [
+            {
+              "title": "SQLBolt (Interactive SQL)",
+              "type": "course",
+              "link": "https://sqlbolt.com/"
+            },
+            {
+              "title": "Intro to Spark (Databricks)",
+              "type": "text",
+              "link": "https://www.databricks.com/discover/introduction-to-apache-spark"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "The Complete SQL Bootcamp (Udemy)",
+              "link": "https://www.udemy.com/course/the-complete-sql-bootcamp/"
+            },
+            {
+              "title": "Data Engineering with Google Cloud (Coursera)",
+              "link": "https://www.coursera.org/professional-certificates/google-data-engineering"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Analyze a Database",
+              "desc": "Download a sample SQL database (e.g., Chinook) and write queries to answer business questions."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Snowflake",
+              "desc": "Leading cloud data warehouse"
+            },
+            {
+              "name": "Databricks",
+              "desc": "Company behind Apache Spark"
+            }
+          ]
+        },
+        {
+          "id": "ethics-communication",
+          "title": "Data Ethics & Communication",
+          "route": "/domains/datascience/ethics-communication",
+          "summary": "The most crucial step. Learn to present your findings as a compelling story. Understand data ethics, privacy, and how to avoid bias in your models and conclusions.",
+          "freeResources": [
+            {
+              "title": "Data Ethics Framework (data.org)",
+              "type": "text",
+              "link": "https://data.org/resources/data-ethics-framework/"
+            },
+            {
+              "title": "Data Storytelling (freeCodeCamp)",
+              "type": "text",
+              "link": "https://www.freecodecamp.org/news/data-storytelling-a-step-by-step-guide-for-beginners/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Data-Driven Decision Making (Coursera)",
+              "link": "https://www.coursera.org/learn/data-driven-decision-making"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Create a Project Presentation",
+              "desc": "Take your EDA project and create a 5-slide presentation for a non-technical audience."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Data for Good",
+              "desc": "Movement for using data in the social sector"
+            }
+          ]
+        },
+        {
+          "id": "deployment",
+          "title": "Deployment & MLOps (Basics)",
+          "route": "/domains/datascience/deployment",
+          "summary": "Put your model to work. Learn to save your model (pickle/joblib), wrap it in an API (FastAPI, Flask), and containerize it (Docker).",
+          "freeResources": [
+            {
+              "title": "FastAPI Docs",
+              "type": "course",
+              "link": "https://fastapi.tiangolo.com/tutorial/"
+            },
+            {
+              "title": "Docker Get Started",
+              "type": "text",
+              "link": "https://docs.docker.com/get-started/"
+            },
+            {
+              "title": "What is MLOps? (MLOps.community)",
+              "type": "text",
+              "link": "https://mlops.community/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "MLOps (Coursera - deeplearning.ai)",
+              "link": "https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Deploy a Model API",
+              "desc": "Wrap your house price model in a FastAPI file so it can make predictions from API calls."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Docker",
+              "desc": "Containerization platform"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "devops",
+      "title": "DevOps",
+      "imageUrl": "/assets/devops.JPG",
+      "description": "DevOps is a culture and set of practices that combines software development (Dev) and IT operations (Ops) to shorten the software development life cycle. It emphasizes automation, collaboration, and monitoring to build, test, and release software faster and more reliably.",
+      "quizRoute": "/quiz/devops",
+      "topics": [
+        {
+          "id": "foundations",
+          "title": "Foundations: Linux & Scripting",
+          "route": "/domains/devops/foundations",
+          "summary": "The bedrock of DevOps. Master the Linux command line, file systems, permissions, and shell scripting (Bash) to automate tasks.",
+          "freeResources": [
+            {
+              "title": "The Linux Command Handbook",
+              "type": "text",
+              "link": "https://www.freecodecamp.org/news/the-linux-commands-handbook/"
+            },
+            {
+              "title": "Bash Scripting Cheat Sheet",
+              "type": "text",
+              "link": "https://devhints.io/bash"
+            },
+            {
+              "title": "Introduction to Networking (GeeksforGeeks)",
+              "type": "text",
+              "link": "https://www.geeksforgeeks.org/computer-network-tutorials/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Linux+ (CompTIA) Certification",
+              "link": "https://www.comptia.org/certifications/linux"
+            },
+            {
+              "title": "Linux Administration Bootcamp (Udemy)",
+              "link": "https://www.udemy.com/course/linux-administration-bootcamp/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Automation Script",
+              "desc": "Write a Bash script that backs up a directory and deletes backups older than 7 days."
+            },
+            {
+              "title": "Setup a Web Server",
+              "desc": "Manually install and configure an Nginx web server on a Linux VM."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "The Linux Foundation",
+              "desc": "Supports the growth of Linux"
+            }
+          ]
+        },
+        {
+          "id": "git",
+          "title": "Git & Source Code Management",
+          "route": "/domains/devops/git",
+          "summary": "Master version control. Go beyond 'commit' and 'push' to learn branching strategies (GitFlow), merging, rebasing, and managing pull requests (PRs).",
+          "freeResources": [
+            {
+              "title": "Atlassian Git Tutorial (Interactive)",
+              "type": "course",
+              "link": "https://www.atlassian.com/git/tutorials"
+            },
+            {
+              "title": "Gitflow Workflow (Atlassian)",
+              "type": "text",
+              "link": "https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Git Complete: The definitive guide (Udemy)",
+              "link": "https://www.udemy.com/course/git-complete/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Fix a Merge Conflict",
+              "desc": "Intentionally create and then resolve a merge conflict between two branches."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "GitHub",
+              "desc": "The world's largest code hosting platform"
+            },
+            {
+              "name": "GitLab",
+              "desc": "A complete DevOps platform"
+            }
+          ]
+        },
+        {
+          "id": "ci-cd",
+          "title": "CI/CD Pipelines",
+          "route": "/domains/devops/ci-cd",
+          "summary": "The 'automation engine' of DevOps. Learn Continuous Integration (CI) and Continuous Delivery (CD) principles. Build pipelines with tools like Jenkins, GitHub Actions, or GitLab CI.",
+          "freeResources": [
+            {
+              "title": "What is CI/CD? (Red Hat)",
+              "type": "text",
+              "link": "https://www.redhat.com/en/topics/devops/what-is-ci-cd"
+            },
+            {
+              "title": "Get started with GitHub Actions",
+              "type": "course",
+              "link": "https://docs.github.com/en/actions/learn-github-actions"
+            },
+            {
+              "title": "Jenkins Documentation",
+              "type": "tool",
+              "link": "https://www.jenkins.io/doc/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Jenkins, From A to Z (Udemy)",
+              "link": "https://www.udemy.com/course/jenkins-from-a-to-z/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Simple CI Pipeline",
+              "desc": "Create a GitHub Action that automatically runs 'npm install' and 'npm test' on every push."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Jenkins",
+              "desc": "The leading open-source automation server"
+            },
+            {
+              "name": "Cloud Native Computing Foundation",
+              "desc": "Manages many CI/CD tools"
+            }
+          ]
+        },
+        {
+          "id": "docker",
+          "title": "Containerization (Docker)",
+          "route": "/domains/devops/docker",
+          "summary": "Package your applications. Learn to create, manage, and run lightweight, portable containers using Docker. Master Dockerfiles, Docker Compose, and image registries.",
+          "freeResources": [
+            {
+              "title": "Docker Get Started",
+              "type": "course",
+              "link": "https://docs.docker.com/get-started/"
+            },
+            {
+              "title": "What is a Dockerfile? (Docker Docs)",
+              "type": "text",
+              "link": "https://docs.docker.com/engine/reference/builder/"
+            },
+            {
+              "title": "Docker Compose Overview",
+              "type": "text",
+              "link": "https://docs.docker.com/compose/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Docker & Kubernetes: The Complete Guide (Udemy)",
+              "link": "https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Dockerize an Application",
+              "desc": "Write a Dockerfile for a simple web app (e.g., Node.js or Python) and build the image."
+            },
+            {
+              "title": "Docker Compose Stack",
+              "desc": "Use Docker Compose to launch your web app and a database (e.g., Postgres) with one command."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Docker",
+              "desc": "The company behind the container platform"
+            }
+          ]
+        },
+        {
+          "id": "kubernetes",
+          "title": "Container Orchestration (Kubernetes)",
+          "route": "/domains/devops/kubernetes",
+          "summary": "Manage containers at scale. Learn the complex but powerful Kubernetes (k8s) ecosystem. Understand Pods, Services, Deployments, ConfigMaps, and Helm charts.",
+          "freeResources": [
+            {
+              "title": "Kubernetes Documentation",
+              "type": "text",
+              "link": "https://kubernetes.io/docs/home/"
+            },
+            {
+              "title": "What is Kubernetes? (YouTube - IBM)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=s_oV-pFeMMw"
+            },
+            {
+              "title": "Helm (The k8s package manager)",
+              "type": "tool",
+              "link": "https://helm.sh/docs/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Certified Kubernetes Administrator (CKA) Certification",
+              "link": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/"
+            },
+            {
+              "title": "Kubernetes for the Absolute Beginners (Udemy)",
+              "link": "https://www.udemy.com/course/learn-kubernetes/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Deploy a k8s App",
+              "desc": "Use Minikube (local k8s) to deploy your Dockerized app using a Deployment and expose it with a Service."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "CNCF",
+              "desc": "Cloud Native Computing Foundation (hosts Kubernetes)"
+            }
+          ]
+        },
+        {
+          "id": "iac",
+          "title": "Infrastructure as Code (IaC)",
+          "route": "/domains/devops/iac",
+          "summary": "Manage infrastructure with code. Learn to provision and manage servers, databases, and networks using code. Master Terraform (declarative) and Ansible (procedural).",
+          "freeResources": [
+            {
+              "title": "Terraform Get Started (HashiCorp)",
+              "type": "course",
+              "link": "https://developer.hashicorp.com/terraform/tutorials/aws-get-started"
+            },
+            {
+              "title": "Ansible Documentation",
+              "type": "text",
+              "link": "https://docs.ansible.com/ansible/latest/index.html"
+            },
+            {
+              "title": "Ansible vs. Terraform (Fireship)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=y38-m-zO6t8"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Terraform Associate Certification (HashiCorp)",
+              "link": "https://www.hashicorp.com/certification/terraform-associate"
+            },
+            {
+              "title": "Ansible for the Absolute Beginner (Udemy)",
+              "link": "https://www.udemy.com/course/ansible-for-the-absolute-beginner-hands-on-devops/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Provision AWS S3 with Terraform",
+              "desc": "Write a Terraform file to create an S3 bucket and an IAM user with access to it."
+            },
+            {
+              "title": "Configure Nginx with Ansible",
+              "desc": "Write an Ansible playbook to install, configure, and start Nginx on a VM."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "HashiCorp",
+              "desc": "Creators of Terraform"
+            },
+            {
+              "name": "Red Hat",
+              "desc": "Maintains Ansible"
+            }
+          ]
+        },
+        {
+          "id": "monitoring",
+          "title": "Monitoring & Observability",
+          "route": "/domains/devops/monitoring",
+          "summary": "If you can't see it, you can't fix it. Learn to collect metrics (Prometheus), visualize them (Grafana), and manage logs (ELK Stack/Loki). Understand the 3 pillars: Metrics, Logs, Traces.",
+          "freeResources": [
+            {
+              "title": "Prometheus Docs",
+              "type": "text",
+              "link": "https://prometheus.io/docs/introduction/overview/"
+            },
+            {
+              "title": "Grafana Docs",
+              "type": "tool",
+              "link": "https://grafana.com/docs/grafana/latest/"
+            },
+            {
+              "title": "What is the ELK Stack? (Elastic)",
+              "type": "text",
+              "link": "https://www.elastic.co/what-is/elk-stack"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Prometheus, the Complete Guide (Udemy)",
+              "link": "https://www.udemy.com/course/prometheus-the-complete-guide/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Prometheus+Grafana",
+              "desc": "Install Prometheus and Grafana, scrape metrics from a simple app, and build a dashboard."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Grafana Labs",
+              "desc": "Creators of Grafana and Loki"
+            },
+            {
+              "name": "Datadog",
+              "desc": "A leading (paid) observability platform"
+            }
+          ]
+        },
+        {
+          "id": "cloud",
+          "title": "Cloud Platform (AWS, Azure, GCP)",
+          "route": "/domains/devops/cloud",
+          "summary": "Master the platform where everything runs. Learn the core services of one major cloud provider (e.g., AWS: EC2, S3, VPC, IAM, RDS) and their managed DevOps services.",
+          "freeResources": [
+            {
+              "title": "AWS Cloud Practitioner Essentials",
+              "type": "course",
+              "link": "https://aws.amazon.com/training/digital/aws-cloud-practitioner-essentials/"
+            },
+            {
+              "title": "Azure Fundamentals (Microsoft Learn)",
+              "type": "course",
+              "link": "https://learn.microsoft.com/en-us/training/paths/az-900-describe-cloud-concepts/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "AWS Certified DevOps Engineer - Professional",
+              "link": "https://aws.amazon.com/certification/devops-engineer-professional/"
+            },
+            {
+              "title": "Microsoft Certified: DevOps Engineer Expert (AZ-400)",
+              "link": "https://learn.microsoft.com/en-us/certifications/devops-engineer/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Full Cloud-Native Pipeline",
+              "desc": "Use AWS CodePipeline (or Azure DevOps) to build and deploy a containerized app to a managed service (EKS/AKS or ECS/ACI)."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Amazon Web Services",
+              "desc": "The market-leading cloud provider"
+            },
+            {
+              "name": "Microsoft Azure",
+              "desc": "The second-largest cloud provider"
+            }
+          ]
+        },
+        {
+          "id": "advanced-gitops",
+          "title": "Advanced: GitOps & Service Mesh",
+          "route": "/domains/devops/advanced-gitops",
+          "summary": "Move to pro-level. Learn GitOps (using Git as the 'source of truth' for infrastructure) with tools like ArgoCD. Understand Service Mesh (Istio, Linkerd) for managing microservices.",
+          "freeResources": [
+            {
+              "title": "What is GitOps? (GitLab)",
+              "type": "text",
+              "link": "https://about.gitlab.com/topics/devops/gitops/"
+            },
+            {
+              "title": "ArgoCD Documentation",
+              "type": "tool",
+              "link": "https://argo-cd.readthedocs.io/en/stable/"
+            },
+            {
+              "title": "What is Istio? (Service Mesh)",
+              "type": "text",
+              "link": "httpss.io/latest/docs/concepts/what-is-istio/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "GitOps Certification (CNCF)",
+              "link": "https://training.linuxfoundation.org/certification/gitops-associate-cgoa/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "ArgoCD Sync",
+              "desc": "Install ArgoCD on k8s and configure it to automatically sync a 'Hello World' app from a GitHub repo."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Argo Project",
+              "desc": "Provides GitOps tools for Kubernetes"
+            }
+          ]
+        },
+        {
+          "id": "advanced-sre",
+          "title": "Advanced: SRE & FinOps",
+          "route": "/domains/devops/advanced-sre",
+          "summary": "Adopt the 'Pro' mindset. Learn Site Reliability Engineering (SRE) principles (SLOs, SLIs, Error Budgets) from Google. Understand FinOps to manage and optimize cloud costs.",
+          "freeResources": [
+            {
+              "title": "The SRE Book (Google)",
+              "type": "text",
+              "link": "https.com/landing"
+            },
+            {
+              "title": "What is FinOps? (FinOps Foundation)",
+              "type": "text",
+              "link": "https://www.finops.org/introduction/what-is-finops/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "FinOps Certified Practitioner (FOCP)",
+              "link": "https.com/certification/finops-certified-practitioner/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Define SLOs/SLIs",
+              "desc": "For your simple web app, define a Service Level Objective (SLO) (e.g., 99.9% uptime) and a Service Level Indicator (SLI) (e.g., HTTP 200 response rate)."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Google SRE",
+              "desc": "Defined the SRE practice"
+            },
+            {
+              "name": "FinOps Foundation",
+              "desc": "Standardizes cloud financial management"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iot",
+      "title": "Internet of Things (IoT)",
+      "imageUrl": "/assets/iot.JPG",
+      "description": "The Internet of Things (IoT) is a network of interconnected, embedded devices ('things') that collect and share data over the internet. This domain blends hardware engineering, networking, cloud computing, and data analytics to build smart systems, from home thermostats to industrial machinery.",
+      "quizRoute": "/quiz/iot",
+      "topics": [
+        {
+          "id": "intro",
+          "title": "Introduction to IoT",
+          "route": "/domains/iot/intro",
+          "summary": "Learn the fundamental concepts, architecture (Device -> Gateway -> Cloud -> Application), and real-world applications of IoT in smart homes, cities, and industry.",
+          "freeResources": [
+            {
+              "title": "What is IoT? (IBM)",
+              "type": "text",
+              "link": "https://www.ibm.com/topics/internet-of-things"
+            },
+            {
+              "title": "The 4 Stages of IoT Architecture",
+              "type": "text",
+              "link": "https://www.i-scoop.eu/internet-of-things-guide/iot-architecture-frameworks/"
+            },
+            {
+              "title": "IoT Full Course (YouTube - Simplilearn)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=h0gWfVCSG9E"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Coursera — Introduction to the Internet of Things (UCI)",
+              "link": "https://www.coursera.org/specializations/internet-of-things"
+            }
+          ],
+          "projects": [
+            {
+              "title": "IoT System Design",
+              "desc": "On paper, diagram the 4-stage architecture for a 'smart refrigerator' (what it senses, how it connects, etc.)."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "IoT World Today",
+              "desc": "News and analysis on the IoT industry"
+            }
+          ]
+        },
+        {
+          "id": "hardware-sensors",
+          "title": "IoT Hardware & Sensors",
+          "route": "/domains/iot/hardware-sensors",
+          "summary": "Get hands-on with the 'Things.' Learn about microcontrollers (Arduino, ESP32), single-board computers (Raspberry Pi), sensors (temp, motion, light), and actuators (relays, motors).",
+          "freeResources": [
+            {
+              "title": "Arduino Official Getting Started",
+              "type": "text",
+              "link": "https://www.arduino.cc/en/Guide"
+            },
+            {
+              "title": "ESP32 vs. Raspberry Pi (MakeUseOf)",
+              "type": "text",
+              "link": "https://www.makeuseof.com/esp32-vs-raspberry-pi-which-is-better/"
+            },
+            {
+              "title": "Top 10 IoT Sensors (TutorialsPoint)",
+              "type": "text",
+              "link": "https://www.tutorialspoint.com/iot/iot_sensors.htm"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Arduino Starter Kit (Hardware)",
+              "link": "https://store.arduino.cc/products/arduino-starter-kit-multi-language"
+            },
+            {
+              "title": "Raspberry Pi Full Course (Udemy)",
+              "link": "https://www.udemy.com/course/raspberry-pi-workshop/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Blink an LED",
+              "desc": "The 'Hello World' of hardware: Use an Arduino or ESP32 to make an LED blink."
+            },
+            {
+              "title": "Read a Sensor",
+              "desc": "Connect a DHT11 sensor to your microcontroller to read temperature and humidity data."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Arduino",
+              "desc": "Open-source electronics prototyping platform"
+            },
+            {
+              "name": "Raspberry Pi Foundation",
+              "desc": "Provides low-cost, high-performance computers"
+            }
+          ]
+        },
+        {
+          "id": "networking-protocols",
+          "title": "IoT Networking & Protocols",
+          "route": "/domains/iot/networking-protocols",
+          "summary": "Learn how devices communicate. Understand device-level protocols (WiFi, Bluetooth, Zigbee, LoRaWAN) and application-layer protocols (MQTT, CoAP, HTTP).",
+          "freeResources": [
+            {
+              "title": "What is MQTT? (HiveMQ)",
+              "type": "text",
+              "link": "https://www.hivemq.com/blog/what-is-mqtt/"
+            },
+            {
+              "title": "LoRaWAN vs. Zigbee (Semtech)",
+              "type": "text",
+              "link": "https://www.semtech.com/lora/lorawan-vs-zigbee"
+            },
+            {
+              "title": "MQTT Crash Course (YouTube - Fireship)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=E_3A0v-A-c8"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "IoT Communication Protocols (Udemy)",
+              "link": "https://www.udemy.com/course/iot-communication-protocols/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "MQTT Publisher/Subscriber",
+              "desc": "Use an ESP32 to publish your sensor data to a public MQTT broker (like HiveMQ) and subscribe to it with a desktop client."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "HiveMQ",
+              "desc": "A leading MQTT broker and platform"
+            },
+            {
+              "name": "LoRa Alliance",
+              "desc": "Manages the LoRaWAN standard"
+            }
+          ]
+        },
+        {
+          "id": "cloud-platforms",
+          "title": "IoT Cloud Platforms",
+          "route": "/domains/iot/cloud-platforms",
+          "summary": "Learn where to send your data. Understand the role of IoT platforms for device management, data ingestion, and security (e.g., AWS IoT Core, Azure IoT Hub, Google Cloud IoT).",
+          "freeResources": [
+            {
+              "title": "What is AWS IoT Core?",
+              "type": "text",
+              "link": "https://aws.amazon.com/iot-core/"
+            },
+            {
+              "title": "What is Azure IoT Hub?",
+              "type": "text",
+              "link": "https://learn.microsoft.com/en-us/azure/iot-hub/about-iot-hub"
+            },
+            {
+              "title": "Blynk (Simple IoT Platform)",
+              "type": "tool",
+              "link": "https://blynk.io/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "AWS IoT Core (Udemy)",
+              "link": "https://www.udemy.com/course/aws-iot-core/"
+            },
+            {
+              "title": "Azure IoT Developer (AZ-220) Certification",
+              "link": "https://learn.microsoft.com/en-us/certifications/exams/az-220/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Connect to AWS IoT Core",
+              "desc": "Provision your ESP32 as a 'Thing' in AWS IoT Core and securely send your MQTT data to the cloud."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Amazon Web Services",
+              "desc": "Provides AWS IoT services"
+            },
+            {
+              "name": "Microsoft Azure",
+              "desc": "Provides Azure IoT services"
+            }
+          ]
+        },
+        {
+          "id": "data-visualization",
+          "title": "Data Processing & Visualization",
+          "route": "/domains/iot/data-visualization",
+          "summary": "Make your data useful. Learn to store time-series data (InfluxDB), route it (Node-RED), and build real-time dashboards (Grafana, Databox).",
+          "freeResources": [
+            {
+              "title": "Node-RED Official Docs",
+              "type": "tool",
+              "link": "https://nodered.org/docs/"
+            },
+            {
+              "title": "What is Grafana?",
+              "type": "tool",
+              "link": "https://grafana.com/docs/grafana/latest/introduction/"
+            },
+            {
+              "title": "What is InfluxDB? (Time-Series DB)",
+              "type": "text",
+              "link": "https://www.influxdata.com/what-is-influxdb/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Node-RED (Udemy)",
+              "link": "https://www.udemy.com/course/node-red-essentials/"
+            },
+            {
+              "title": "Grafana Dashboards (Udemy)",
+              "link": "https://www.udemy.com/course/grafana-dashboards-from-beginner-to-advanced-fast/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Build a Weather Dashboard",
+              "desc": "Use Node-RED to get your sensor data, store it in InfluxDB, and build a Grafana dashboard to visualize it."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Grafana Labs",
+              "desc": "Creators of Grafana dashboards"
+            },
+            {
+              "name": "InfluxData",
+              "desc": "Creators of InfluxDB"
+            }
+          ]
+        },
+        {
+          "id": "edge-computing",
+          "title": "Edge Computing",
+          "route": "/domains/iot/edge-computing",
+          "summary": "Learn to process data *before* the cloud. Understand the need for edge computing (latency, bandwidth, cost) and tools like AWS Greengrass, Azure IoT Edge, and TinyML.",
+          "freeResources": [
+            {
+              "title": "What is Edge Computing? (Cloudflare)",
+              "type": "text",
+              "link": "https://www.cloudflare.com/learning/serverless/what-is-edge-computing/"
+            },
+            {
+              "title": "AWS IoT Greengrass",
+              "type": "text",
+              "link": "https://aws.amazon.com/greengrass/"
+            },
+            {
+              "title": "TinyML (Machine Learning on Microcontrollers)",
+              "type": "text",
+              "link": "https://www.tinyml.org/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "TinyML (Coursera - Harvard)",
+              "link": "https://www.coursera.org/learn/tinyml"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Local MQTT Broker",
+              "desc": "Install an MQTT broker (like Mosquitto) on a Raspberry Pi to act as a local gateway for your devices."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "TinyML Foundation",
+              "desc": "Promotes machine learning on edge devices"
+            }
+          ]
+        },
+        {
+          "id": "security",
+          "title": "IoT Security",
+          "route": "/domains/iot/security",
+          "summary": "Learn to secure your devices. Understand the IoT attack surface, device hardening, secure boot, network encryption (TLS), and managing device certificates (PKI).",
+          "freeResources": [
+            {
+              "title": "OWASP IoT Top 10",
+              "type": "text",
+              "link": "https://owasp.org/www-project-iot-top-10/"
+            },
+            {
+              "title": "The Mirai Botnet Explained (Wired)",
+              "type": "text",
+              "link": "https://www.wired.com/story/mirai-botnet-wired-guide/"
+            },
+            {
+              "title": "Securing IoT with X.509 Certificates (HiveMQ)",
+              "type": "text",
+              "link": "https://www.hivemq.com/blog/iot-security-basics-x509-certificates/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "IoT Security (Udemy)",
+              "link": "https://www.udemy.com/course/iot-security-and-privacy/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Secure your MQTT Broker",
+              "desc": "Configure your Mosquitto broker to require a username, password, and TLS encryption."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "OWASP",
+              "desc": "Manages the Top 10 IoT security vulnerabilities"
+            }
+          ]
+        },
+        {
+          "id": "iiot",
+          "title": "Industrial IoT (IIoT)",
+          "route": "/domains/iot/iiot",
+          "summary": "Explore IoT in industry. Learn about SCADA, PLCs, predictive maintenance, and 'Digital Twins' for manufacturing, logistics, and agriculture.",
+          "freeResources": [
+            {
+              "title": "What is IIoT? (IBM)",
+              "type": "text",
+              "link": "https://www.ibm.com/topics/iiot"
+            },
+            {
+              "title": "What is a Digital Twin?",
+              "type": "text",
+              "link": "https://www.twi-global.com/technical-knowledge/faqs/what-is-a-digital-twin"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "IIoT (Coursera - University of Virginia)",
+              "link": "https://www.coursera.org/learn/iiot"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Predictive Maintenance Analysis",
+              "desc": "Research a case study of how IIoT sensors are used to predict motor failure in a factory."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Siemens",
+              "desc": "A leader in industrial automation and IIoT"
+            }
+          ]
+        },
+        {
+          "id": "consumer-iot",
+          "title": "Consumer IoT",
+          "route": "/domains/iot/consumer-iot",
+          "summary": "Explore IoT for people. Learn about smart home ecosystems (Alexa, Google Home, Apple HomeKit), wearables (Fitbit), and user-centric design.",
+          "freeResources": [
+            {
+              "title": "How Alexa Skills Work (Amazon)",
+              "type": "text",
+              "link": "https://developer.amazon.com/en-US/alexa/skills-kit/how-it-works"
+            },
+            {
+              "title": "Home Assistant (Open Source Home Automation)",
+              "type": "tool",
+              "link": "https://www.home-assistant.io/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Build an Alexa Skill",
+              "link": "https://www.udemy.com/course/alexa-skill-development-bootcamp/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Smart Light Project",
+              "desc": "Use an ESP32 and a relay to control a lamp by sending an MQTT command from your phone or PC."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Amazon",
+              "desc": "Creator of Alexa and the Echo ecosystem"
+            }
+          ]
+        },
+        {
+          "id": "lifecycle",
+          "title": "IoT Lifecycle & Management",
+          "route": "/domains/iot/lifecycle",
+          "summary": "Learn to manage devices at scale. Understand device provisioning, Over-the-Air (OTA) firmware updates, and device fleet management.",
+          "freeResources": [
+            {
+              "title": "What are OTA Updates? (ESP32 Docs)",
+              "type": "text",
+              "link": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/ota.html"
+            },
+            {
+              "title": "The IoT Device Lifecycle (AWS)",
+              "type": "text",
+              "link": "https.com/whitepapers/aws-iot-device-management-and-the-iot-device-lifecycle/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Full IoT Course (Udemy)",
+              "link": "https://www.udemy.com/course/complete-guide-to-build-iot-things/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Perform an OTA Update",
+              "desc": "Follow a tutorial to update the code on your ESP32 over WiFi instead of using a USB cable."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Espressif",
+              "desc": "Creators of the popular ESP32 and ESP8266"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "machinelearning",
+      "title": "Machine Learning",
+      "imageUrl": "/assets/machinelearning.JPG",
+      "description": "Machine Learning (ML) is a field of artificial intelligence (AI) that enables computers to learn from data and improve from experience without being explicitly programmed. It involves algorithms that can identify patterns, make predictions, and generate insights from complex datasets.",
+      "quizRoute": "/quiz/machinelearning",
+      "topics": [
+        {
+          "id": "intro",
+          "title": "Introduction to ML & AI",
+          "route": "/domains/machinelearning/intro",
+          "summary": "Understand the fundamentals of Artificial Intelligence, Machine Learning, and Deep Learning, and how they differ.",
+          "freeResources": [
+            {
+              "title": "What is Machine Learning? (IBM)",
+              "type": "text",
+              "link": "https://www.ibm.com/topics/machine-learning"
+            },
+            {
+              "title": "Intro to Machine Learning (Kaggle)",
+              "type": "course",
+              "link": "https://www.kaggle.com/learn/intro-to-machine-learning"
+            },
+            {
+              "title": "Machine Learning Explained (YouTube - StatQuest)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=Gv9_EiJpsoA"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Coursera — Machine Learning by Andrew Ng (Stanford)",
+              "link": "https://www.coursera.org/learn/machine-learning"
+            },
+            {
+              "title": "Udemy — Machine Learning A-Z",
+              "link": "https://www.udemy.com/course/machinelearning/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "ML Concepts Report",
+              "desc": "Write a short report explaining the difference between Supervised, Unsupervised, and Reinforcement Learning."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Google AI",
+              "desc": "Drives research and development in AI/ML"
+            },
+            {
+              "name": "OpenAI",
+              "desc": "AI research and deployment company"
+            }
+          ]
+        },
+        {
+          "id": "python-datascience",
+          "title": "Python for Data Science",
+          "route": "/domains/machinelearning/python-datascience",
+          "summary": "Master the essential Python libraries for data manipulation and analysis: NumPy, Pandas, and Matplotlib.",
+          "freeResources": [
+            {
+              "title": "Pandas 10-min Intro",
+              "type": "text",
+              "link": "https://pandas.pydata.org/docs/user_guide/10min.html"
+            },
+            {
+              "title": "NumPy Quickstart",
+              "type": "text",
+              "link": "https://numpy.org/doc/stable/user/quickstart.html"
+            },
+            {
+              "title": "Python for Data Science (YouTube - freeCodeCamp)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=LHJb_dM8-dE"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Coursera — Python for Data Science, AI & Development (IBM)",
+              "link": "https://www.coursera.org/learn/python-for-data-science"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Analyze a CSV file",
+              "desc": "Use Pandas to load a CSV, clean it, and calculate descriptive statistics."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Pandas Team",
+              "desc": "Maintainers of the open-source Pandas library"
+            }
+          ]
+        },
+        {
+          "id": "math",
+          "title": "Math for Machine Learning",
+          "route": "/domains/machinelearning/math",
+          "summary": "Review the core mathematical concepts that power ML algorithms: Linear Algebra, Calculus, and Statistics.",
+          "freeResources": [
+            {
+              "title": "Essence of Linear Algebra (YouTube - 3Blue1Brown)",
+              "type": "video",
+              "link": "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab"
+            },
+            {
+              "title": "Statistics & Probability (Khan Academy)",
+              "type": "course",
+              "link": "https://www.khanacademy.org/math/statistics-probability"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Coursera — Mathematics for Machine Learning",
+              "link": "https://www.coursera.org/specializations/mathematics-machine-learning"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Gradient Descent from Scratch",
+              "desc": "Implement a simple linear regression using only NumPy, calculating gradients manually."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "3Blue1Brown",
+              "desc": "Creator of intuitive math visualizations"
+            }
+          ]
+        },
+        {
+          "id": "preprocessing-eda",
+          "title": "Data Preprocessing & EDA",
+          "route": "/domains/machinelearning/preprocessing-eda",
+          "summary": "Learn to clean, transform, and visualize data. Handle missing values, encode features, and perform Exploratory Data Analysis (EDA).",
+          "freeResources": [
+            {
+              "title": "Kaggle — Data Cleaning Course",
+              "type": "course",
+              "link": "https://www.kaggle.com/learn/data-cleaning"
+            },
+            {
+              "title": "Scikit-learn — Preprocessing Guide",
+              "type": "text",
+              "link": "https://scikit-learn.org/stable/modules/preprocessing.html"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Udemy — Feature Engineering for Machine Learning",
+              "link": "https://www.udemy.com/course/feature-engineering-for-machine-learning/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Titanic Dataset Analysis",
+              "desc": "Perform a full EDA on the classic Titanic dataset and visualize your findings."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Kaggle",
+              "desc": "A platform for data science competitions and datasets"
+            }
+          ]
+        },
+        {
+          "id": "supervised",
+          "title": "Supervised Learning",
+          "route": "/domains/machinelearning/supervised",
+          "summary": "Build models that predict an output from labeled data. Covers Linear Regression, Logistic Regression, Decision Trees, and SVMs.",
+          "freeResources": [
+            {
+              "title": "Scikit-learn Model Docs",
+              "type": "text",
+              "link": "https://scikit-learn.org/stable/supervised_learning.html"
+            },
+            {
+              "title": "StatQuest (YouTube Channel)",
+              "type": "video",
+              "link": "https://www.youtube.com/c/statquest"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Coursera — Supervised ML (Part of Andrew Ng's Spec.)",
+              "link": "https://www.coursera.org/learn/supervised-machine-learning-regression-and-classification"
+            }
+          ],
+          "projects": [
+            {
+              "title": "House Price Prediction",
+              "desc": "Build a Linear Regression model to predict housing prices."
+            },
+            {
+              "title": "Iris Flower Classification",
+              "desc": "Use a Decision Tree or SVM to classify species of Iris flowers."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Scikit-learn",
+              "desc": "The core open-source ML library for Python"
+            }
+          ]
+        },
+        {
+          "id": "unsupervised",
+          "title": "Unsupervised Learning",
+          "route": "/domains/machinelearning/unsupervised",
+          "summary": "Find hidden patterns in unlabeled data using algorithms like K-Means Clustering, DBSCAN, and PCA.",
+          "freeResources": [
+            {
+              "title": "Clustering Algorithms (Scikit-learn)",
+              "type": "text",
+              "link": "https://scikit-learn.org/stable/modules/clustering.html"
+            },
+            {
+              "title": "PCA Explained (StatQuest)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=FgakZw6K1QQ"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Coursera — Unsupervised Learning (Part of Andrew Ng's Spec.)",
+              "link": "https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Customer Segmentation",
+              "desc": "Use K-Means to cluster customers from a shopping dataset."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Scikit-learn",
+              "desc": "Provides robust implementations of clustering/PCA"
+            }
+          ]
+        },
+        {
+          "id": "evaluation",
+          "title": "Model Evaluation & Metrics",
+          "route": "/domains/machinelearning/evaluation",
+          "summary": "Learn how to tell if your model is good. Understand Accuracy, Precision, Recall, F1-Score, R-Squared, and Cross-Validation.",
+          "freeResources": [
+            {
+              "title": "Model Evaluation Docs (Scikit-learn)",
+              "type": "text",
+              "link": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+            },
+            {
+              "title": "Cross-Validation Explained (StatQuest)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=fSGGodVoerg"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Kaggle — Model Validation Course",
+              "type": "course",
+              "link": "https://www.kaggle.com/learn/model-validation"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Compare Two Models",
+              "desc": "Train two different classifiers (e.g., Logistic Regression vs. Random Forest) and write a report on which is better and why, using proper metrics."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Kaggle",
+              "desc": "Platform focused on predictive modeling and metrics"
+            }
+          ]
+        },
+        {
+          "id": "deeplearning",
+          "title": "Introduction to Deep Learning",
+          "route": "/domains/machinelearning/deeplearning",
+          "summary": "Explore the basics of Neural Networks and Deep Learning using libraries like TensorFlow and Keras.",
+          "freeResources": [
+            {
+              "title": "Keras Basics",
+              "type": "text",
+              "link": "https://keras.io/guides/writing_a_training_loop_from_scratch/"
+            },
+            {
+              "title": "Deep Learning (YouTube - 3Blue1Brown)",
+              "type": "video",
+              "link": "https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Coursera — Deep Learning Specialization",
+              "link": "https://www.coursera.org/specializations/deep-learning"
+            }
+          ],
+          "projects": [
+            {
+              "title": "MNIST Digit Classifier",
+              "desc": "Build a simple neural network to classify handwritten digits (0-9)."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "TensorFlow",
+              "desc": "Google's open-source deep learning library"
+            },
+            {
+              "name": "Keras",
+              "desc": "A high-level, user-friendly API for deep learning"
+            }
+          ]
+        },
+        {
+          "id": "specializations",
+          "title": "ML Specializations",
+          "route": "/domains/machinelearning/specializations",
+          "summary": "Get an overview of advanced fields like Natural Language Processing (NLP), Computer Vision (CV), and Reinforcement Learning.",
+          "freeResources": [
+            {
+              "title": "Hugging Face (NLP)",
+              "type": "tool",
+              "link": "https://huggingface.co/learn/nlp-course"
+            },
+            {
+              "title": "OpenCV (Computer Vision)",
+              "type": "tool",
+              "link": "https://opencv.org/get-started/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Coursera — Natural Language Processing (deeplearning.ai)",
+              "link": "https://www.coursera.org/specializations/natural-language-processing"
+            },
+            {
+              "title": "Coursera — Computer Vision (deeplearning.ai)",
+              "link": "https://www.coursera.org/specializations/computer-vision"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Simple Sentiment Analysis",
+              "desc": "Use a pre-trained model (like VADER) to classify text as positive or negative."
+            },
+            {
+              "title": "Object Detection with YOLO",
+              "desc": "Use a pre-trained YOLO model to detect objects in an image."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Hugging Face",
+              "desc": "The leading platform for NLP models and tools"
+            },
+            {
+              "name": "OpenCV",
+              "desc": "The core library for open-source computer vision"
+            }
+          ]
+        },
+        {
+          "id": "mlops",
+          "title": "MLOps & Deployment",
+          "route": "/domains/machinelearning/mlops",
+          "summary": "Learn how to productionize your models. Covers model serving, monitoring, and MLOps principles.",
+          "freeResources": [
+            {
+              "title": "What is MLOps? (Google Cloud)",
+              "type": "text",
+              "link": "https://cloud.google.com/mlops"
+            },
+            {
+              "title": "Introduction to Docker",
+              "type": "text",
+              "link": "https://docs.docker.com/get-started/overview/"
+            },
+            {
+              "title": "Building a simple API with FastAPI",
+              "type": "text",
+              "link": "https://fastapi.tiangolo.com/tutorial/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Coursera — MLOps Specialization",
+              "link": "https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Deploy Model with FastAPI",
+              "desc": "Wrap your trained model (e.g., the house price predictor) in a FastAPI endpoint."
+            },
+            {
+              "title": "Dockerize your ML App",
+              "desc": "Containerize your FastAPI application using Docker."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Docker",
+              "desc": "The leading containerization platform"
+            },
+            {
+              "name": "Kubernetes",
+              "desc": "The leading platform for container orchestration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "softwaredevelopment",
+      "title": "Software Development",
+      "imageUrl": "/assets/development.JPG",
+      "description": "Software Development is the comprehensive process of conceiving, designing, building, testing, and deploying software. It's an engineering discipline that combines computer science, project management, and creative problem-solving to create applications for web, mobile, desktop, and more.",
+      "quizRoute": "/quiz/softwaredevelopment",
+      "topics": [
+        {
+          "id": "sdlc-agile",
+          "title": "SDLC & Agile",
+          "route": "/domains/softwaredevelopment/sdlc-agile",
+          "summary": "Learn the 'how' of building software. Understand the Software Development Life Cycle (SDLC), from requirements gathering and design to testing and deployment. Master Agile, Scrum, and Kanban.",
+          "freeResources": [
+            {
+              "title": "What is the SDLC? (IBM)",
+              "type": "text",
+              "link": "https://www.ibm.com/topics/sdlc"
+            },
+            {
+              "title": "What is Agile? (Atlassian)",
+              "type": "text",
+              "link": "https://www.atlassian.com/agile"
+            },
+            {
+              "title": "Intro to Scrum in 8 Minutes (YouTube)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=9T-D_VuA9N4"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Certified ScrumMaster (CSM) Certification",
+              "link": "https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster"
+            },
+            {
+              "title": "Agile Project Management (Coursera)",
+              "link": "https://www.coursera.org/specializations/agile-development"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Create a Project Trello Board",
+              "desc": "Plan a small project (e.g., a blog) using User Stories, a Backlog, and To Do/In Progress/Done columns."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Scrum Alliance",
+              "desc": "Global body for Scrum certification"
+            },
+            {
+              "name": "Atlassian",
+              "desc": "Creators of Jira and Trello (Agile tools)"
+            }
+          ]
+        },
+        {
+          "id": "architecture",
+          "title": "Software Architecture",
+          "route": "/domains/softwaredevelopment/architecture",
+          "summary": "Learn to design the 'blueprint' of a system. Understand architectures like Monolith, Microservices, and 3-Tier. Study SOLID principles and common Design Patterns.",
+          "freeResources": [
+            {
+              "title": "SOLID Principles Explained (freeCodeCamp)",
+              "type": "text",
+              "link": "https://www.freecodecamp.org/news/solid-principles-every-developer-should-know/"
+            },
+            {
+              "title": "Design Patterns (Refactoring.Guru)",
+              "type": "text",
+              "link": "https://refactoring.guru/design-patterns"
+            },
+            {
+              "title": "Microservices (YouTube - Fireship)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=S-n3g0Rq-5k"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Book: Clean Architecture (Robert C. Martin)",
+              "link": "https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164"
+            },
+            {
+              "title": "Grokking the System Design Interview (Educative)",
+              "link": "https://www.educative.io/courses/grokking-the-system-design-interview"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Diagram a System",
+              "desc": "Draw a simple component diagram for a ride-sharing app (User, Driver, API, Database, Payments)."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Martin Fowler",
+              "desc": "Influential author on software architecture"
+            }
+          ]
+        },
+        {
+          "id": "dsa",
+          "title": "Data Structures & Algorithms",
+          "route": "/domains/softwaredevelopment/dsa",
+          "summary": "Master the core tools of programming. Learn Data Structures (Arrays, Maps, Stacks, Trees) and Algorithms (Sorting, Searching) to write efficient, scalable code.",
+          "freeResources": [
+            {
+              "title": "Big O Notation (GeeksforGeeks)",
+              "type": "text",
+              "link": "https://www.geeksforgeeks.org/analysis-of-algorithms-big-o-analysis/"
+            },
+            {
+              "title": "LeetCode (Platform)",
+              "type": "course",
+              "link": "https://leetcode.com/"
+            },
+            {
+              "title": "Harvard CS50 - Data Structures (YouTube)",
+              "type": "video",
+              "link": "https://www.youtube.com/watch?v=4VqmShwxQyM"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Book: Cracking the Coding Interview (G.L. McDowell)",
+              "link": "https.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Solve 10 LeetCode Easy",
+              "desc": "Solve 10 'Easy' problems on LeetCode using the language of your choice."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "LeetCode",
+              "desc": "Platform for technical interview practice"
+            },
+            {
+              "name": "HackerRank",
+              "desc": "Platform for competitive programming"
+            }
+          ]
+        },
+        {
+          "id": "git",
+          "title": "Version Control (Git)",
+          "route": "/domains/softwaredevelopment/git",
+          "summary": "Learn how to manage and collaborate on code. Master the essentials: commit, push, pull, branch, merge, and handle merge conflicts using Git and GitHub.",
+          "freeResources": [
+            {
+              "title": "Git Handbook (GitHub)",
+              "type": "text",
+              "link": "https://guides.github.com/introduction/git-handbook/"
+            },
+            {
+              "title": "Atlassian Git Tutorial (Interactive)",
+              "type": "course",
+              "link": "https://www.atlassian.com/git/tutorials"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Git Complete: The definitive guide (Udemy)",
+              "link": "https.com/course/git-complete/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Create a GitHub Repo",
+              "desc": "Create a new repo, add a file, create a 'dev' branch, make a change, and merge it back to 'main'."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "GitHub",
+              "desc": "The world's largest code hosting platform"
+            },
+            {
+              "name": "GitLab",
+              "desc": "A complete DevOps platform"
+            }
+          ]
+        },
+        {
+          "id": "frontend",
+          "title": "Web Development: Frontend",
+          "route": "/domains/softwaredevelopment/frontend",
+          "summary": "Build the user-facing part of websites. Master HTML, CSS, and JavaScript, then learn modern frameworks like React, Vue, or Angular to build dynamic user interfaces.",
+          "freeResources": [
+            {
+              "title": "MDN Web Docs (Mozilla)",
+              "type": "text",
+              "link": "https://developer.mozilla.org/en-US/"
+            },
+            {
+              "title": "React Official Docs (New)",
+              "type": "course",
+              "link": "https://react.dev/learn"
+            },
+            {
+              "title": "CSS-Tricks (Website)",
+              "type": "text",
+              "link": "https://css-tricks.com/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "The Odin Project (Free, but comprehensive)",
+              "link": "https://www.theodinproject.com/"
+            },
+            {
+              "title": "Full-Stack Web Dev (Udemy - Angela Yu)",
+              "link": "https.com/course/the-complete-web-development-bootcamp/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Personal Portfolio Website",
+              "desc": "Build a responsive portfolio website using HTML, CSS, and JavaScript."
+            },
+            {
+              "title": "React To-Do List",
+              "desc": "Create a simple To-Do list app where users can add and remove tasks."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Vercel",
+              "desc": "Creators of Next.js (React framework)"
+            },
+            {
+              "name": "Meta",
+              "desc": "Creators of React"
+            }
+          ]
+        },
+        {
+          "id": "backend",
+          "title": "Web Development: Backend",
+          "route": "/domains/softwaredevelopment/backend",
+          "summary": "Build the 'server-side' logic. Learn to create REST APIs, manage databases, and handle user authentication using languages/frameworks like Node.js, Python (Django/FastAPI), or Java (Spring).",
+          "freeResources": [
+            {
+              "title": "Node.js Official Docs",
+              "type": "text",
+              "link": "https://nodejs.org/en/docs"
+            },
+            {
+              "title": "Building a REST API with Express (Guide)",
+              "type": "text",
+              "link": "https://www.freecodecamp.org/news/create-a-rest-api-with-express-js-in-4-minutes/"
+            },
+            {
+              "title": "FastAPI Official Docs (Python)",
+              "type": "course",
+              "link": "https://fastapi.tiangolo.com/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Node.js, Express, MongoDB (Udemy - Jonas S.)",
+              "link": "https.com/course/nodejs-express-mongodb-bootcamp/"
+            },
+            {
+              "title": "Python and Django Full Stack (Udemy)",
+              "link": "https.com/course/python-and-django-full-stack-web-developer-bootcamp/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Blog API",
+              "desc": "Create a REST API with endpoints to Create, Read, Update, and Delete blog posts."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Node.js Foundation",
+              "desc": "Manages the Node.js open-source project"
+            },
+            {
+              "name": "Microsoft",
+              "desc": "Maintains .NET framework"
+            }
+          ]
+        },
+        {
+          "id": "mobile",
+          "title": "Mobile App Development",
+          "route": "/domains/softwaredevelopment/mobile",
+          "summary": "Build applications for iOS and Android. Choose between Native (Swift for iOS, Kotlin for Android) or Cross-Platform (React Native, Flutter) development.",
+          "freeResources": [
+            {
+              "title": "Flutter Official Docs",
+              "type": "course",
+              "link": "https.com/docs"
+            },
+            {
+              "title": "React Native Official Docs",
+              "type": "course",
+              "link": "https://reactnative.dev/docs/getting-started"
+            },
+            {
+              "title": "SwiftUI (Apple Developer)",
+              "type": "text",
+              "link": "https://developer.apple.com/xcode/swiftui/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Flutter & Dart (Udemy - Angela Yu)",
+              "link": "https.com/course/flutter-bootcamp-with-dart/"
+            },
+            {
+              "title": "React Native (Udemy - Academind)",
+              "link": "https.com/course/react-native-the-practical-guide/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Simple Weather App",
+              "desc": "Build a mobile app in Flutter or React Native that pulls data from a free weather API and displays it."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Google",
+              "desc": "Creators of Flutter and Android/Kotlin"
+            },
+            {
+              "name": "Apple",
+              "desc": "Creators of Swift and iOS"
+            }
+          ]
+        },
+        {
+          "id": "databases",
+          "title": "Databases",
+          "route": "/domains/softwaredevelopment/databases",
+          "summary": "Learn how to store and retrieve data. Understand relational SQL databases (PostgreSQL, MySQL) and non-relational NoSQL databases (MongoDB, Firestore, Redis).",
+          "freeResources": [
+            {
+              "title": "SQLBolt (Interactive SQL)",
+              "type": "course",
+              "link": "https://sqlbolt.com/"
+            },
+            {
+              "title": "MongoDB University (Free Courses)",
+              "type": "course",
+              "link": "https://learn.mongodb.com/"
+            },
+            {
+              "title": "PostgreSQL Tutorial",
+              "type": "text",
+              "link": "https.com/docs/current/tutorial-start.html"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "The Ultimate MySQL Bootcamp (Udemy)",
+              "link": "https.com/course/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "E-commerce Schema",
+              "desc": "Design the SQL database schema (tables and relationships) for an e-commerce store with Users, Products, and Orders."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "MongoDB Inc.",
+              "desc": "Creators of MongoDB"
+            },
+            {
+              "name": "Oracle",
+              "desc": "Maintainers of MySQL"
+            }
+          ]
+        },
+        {
+          "id": "testing",
+          "title": "Testing & Quality Assurance",
+          "route": "/domains/softwaredevelopment/testing",
+          "summary": "Ensure your code works. Learn about the 'Testing Pyramid' (Unit, Integration, E2E tests) using tools like Jest, Pytest, or Selenium.",
+          "freeResources": [
+            {
+              "title": "Jest Docs (JavaScript Testing)",
+              "type": "text",
+              "link": "https.com/docs"
+            },
+            {
+              "title": "Pytest Docs (Python Testing)",
+              "type": "text",
+              "link": "https.com/docs/stable/"
+            },
+            {
+              "title": "Intro to Testing (freeCodeCamp)",
+              "type": "text",
+              "link": "https.com/news/testing-in-software-development-a-guide-for-beginners/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "ISTQB Foundation Level (Certification)",
+              "link": "https://www.istqb.org/certifications/certified-tester-foundation-level"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Write Unit Tests",
+              "desc": "For your 'Blog API' project, write unit tests to verify that your 'Create Post' endpoint works correctly."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "ISTQB",
+              "desc": "Global board for software testing certification"
+            }
+          ]
+        },
+        {
+          "id": "devops",
+          "title": "DevOps & Deployment",
+          "route": "/domains/softwaredevelopment/devops",
+          "summary": "Automate your workflow. Learn to containerize apps with Docker, set up CI/CD pipelines (GitHub Actions), and deploy to cloud platforms (AWS, Vercel, Heroku).",
+          "freeResources": [
+            {
+              "title": "Docker Get Started",
+              "type": "text",
+              "link": "https.com/get-started/overview/"
+            },
+            {
+              "title": "GitHub Actions Docs",
+              "type": "text",
+              "link": "https.com/actions/learn-github-actions"
+            },
+            {
+              "title": "What is DevOps? (Amazon AWS)",
+              "type": "text",
+              "link": "https://aws.amazon.com/devops/what-is-devops/"
+            }
+          ],
+          "paidResources": [
+            {
+              "title": "Docker and Kubernetes (Udemy - Stephen Grider)",
+              "link": "https.com/course/docker-and-kubernetes-the-complete-guide/"
+            }
+          ],
+          "projects": [
+            {
+              "title": "Dockerize your API",
+              "desc": "Create a Dockerfile for your backend API, build an image, and run it in a container."
+            }
+          ],
+          "organizations": [
+            {
+              "name": "Docker",
+              "desc": "The leading containerization platform"
+            },
+            {
+              "name": "Amazon Web Services",
+              "desc": "The leading cloud provider"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
