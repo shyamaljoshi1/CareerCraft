@@ -5,7 +5,8 @@ Career Craft is an innovative and comprehensive web application engineered to so
 -----
 
 🏗️ \#\# Architectural Diagram
-<img width="1024" height="747" alt="13" src="https://github.com/user-attachments/assets/516ee1e8-48f4-4c3a-a778-b084b3dcabf7" />
+![architectural_diagram_career_craft](https://github.com/user-attachments/assets/de3b0804-d937-4299-8c1d-0684a0b0b052)
+
 
 
 
