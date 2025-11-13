@@ -5,7 +5,8 @@ Career Craft is an innovative and comprehensive web application engineered to so
 -----
 
 🏗️ \#\# Architectural Diagram
-<img width="749" height="544" alt="image" src="https://github.com/user-attachments/assets/52dd5c4e-4acd-4140-9eda-2bb7028ce32a" />
+<img width="1024" height="747" alt="13" src="https://github.com/user-attachments/assets/516ee1e8-48f4-4c3a-a778-b084b3dcabf7" />
+
 
 
 -----
@@ -117,8 +118,9 @@ CareerCraft/
 📸 \#\# Screenshots
 
   * Login Page
+
     <img width="684" height="772" alt="image" src="https://github.com/user-attachments/assets/3c98b0a8-330f-47a8-86dd-3f63cf9dfdb1" />
-  *Sign Up Page
+  * Sign Up Page
     <img width="574" height="919" alt="image" src="https://github.com/user-attachments/assets/37e707fd-ec0c-4c72-b6d4-1abfa1a5d433" />
 
   * Home Page (Domain Listing)
@@ -132,9 +134,10 @@ CareerCraft/
 
 
   * Quiz Page
+    
     <img width="855" height="793" alt="image" src="https://github.com/user-attachments/assets/495346fd-fd38-402b-98f2-59724643f6f0" />
 
-  * Profile Page (with Quiz History)
+  * Profile Page 
     <img width="1919" height="806" alt="image" src="https://github.com/user-attachments/assets/59f7a8b6-7d14-47fe-a274-d73af6a62628" />
 
  
